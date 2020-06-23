@@ -21,3 +21,5 @@ Aumentar la taza de adopción de mascotas, menos nivel de perros callejeros y cr
 - Firebase Tools "comando: npm install -g firebase-tools "
 4- Importación de los comandos creados en router y main
 
+USUARIOS DE PRUEBA
+adopto@mascota.cl //// info@mascota.cl 
