@@ -5,6 +5,7 @@ import Login from "../views/Login.vue";
 import Blog from "../views/Blog.vue";
 import Collage from "../components/Collage.vue"; // Hija
 import Busqueda from "../views/Busqueda.vue";
+
 import Firebase from 'firebase'
 import NotFound from "../components/NotFound.vue"; 
 
