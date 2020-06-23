@@ -1,4 +1,5 @@
 # itake
+Trabajo Final: Carolina Herrera y  Lucas Osorio 
  
 •	Descripción del proyecto:
 Existe una alta tasa de población de animales en situación de calle, sin cuidados están expuestos a accidentes, enfermedades y sobre población de ellos mismos. A su vez, el nuevo ciudadano es más conciente de que adoptando en lugar de comprar, pero existe poca información sobre las principales Fundaciones, sus actividades aun no son masivas, por lo que no pueden abarcar una ayuda más global, y el proceso de encontrar un tutor para la mascota se vuelve más largo, en algunos casos insostenible para la fundacion (implica los cuidados, alimentación, tratamiento médico, etc) 
