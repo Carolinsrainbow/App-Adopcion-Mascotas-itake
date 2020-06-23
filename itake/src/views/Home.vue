@@ -2,7 +2,6 @@
   <div class="home">
     <Navbar></Navbar>
     <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
   </div>
 </template>
 
@@ -13,7 +12,7 @@ import Navbar from "@/components/Navbar.vue";
 export default {
   name: "Home",
   components: {
-    Navbar
+    Navbar,
   }
 };
 </script>

@@ -1,14 +1,19 @@
 <template>
-    <div>
-<Registro />
-    </div>
+  <div>
+    <Navbar></Navbar>
+<Form />
+  </div>
 </template>
 
-<script>    
-import Registro from "@/components/Registro.vue";
+<script>
+import Navbar from "@/components/Navbar.vue";
+import Form from "@/components/Login/Form.vue";
+
 export default {
+  name: "Login",
   components: {
-    Registro
-  }
+    Form,
+    Navbar,
+  },
 };
 </script>

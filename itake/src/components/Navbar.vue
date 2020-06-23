@@ -42,9 +42,7 @@
 <script>
 import Firebase from "firebase";
 
-export default {
+export default{
     name: 'Navbar',
-
-    
 }
 </script>
