@@ -1,5 +1,6 @@
 <template>
   <div>
+      <h1>Informacion General</h1>
     <b-carousel
       id="carousel-1"
       v-model="slide"
