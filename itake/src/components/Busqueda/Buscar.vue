@@ -1,30 +1,19 @@
 <template>
-  <div>
-    <template>
-  <div>
-    <b-form-input v-model="text" placeholder="Enter your name"></b-form-input>
-    <div class="mt-2">Value: {{ text }}</div>
-  </div>
-  
-</template>
-      <b-button variant="warning">Warning</b-button>
+ <div>
+   <h1>Selecciona una raza</h1>
+    <b-form-select v-model="selected" class="mb-3">
+ <b-form-select-option :value = "null">Elija una raza</b-form-select-option>
+      <b-form-select-option value="labrador">Labrador</b-form-select-option>
+          <b-form-select-option value="beagle">Beagle</b-form-select-option>
+              <b-form-select-option value="bulldog">Bulldog</b-form-select-option>
+                  <b-form-select-option value="shiba">Shiba</b-form-select-option>
+                      <b-form-select-option value="papillon">Papillon</b-form-select-option>
 
-    <b-card
-      title="Aqui van perritos"
-      img-src="https://picsum.photos/600/300/?image=25"
-      img-alt="Image"
-      img-top
-      tag="article"
-      style="max-width: 20rem;"
-      class="mb-2"
-    >
-      <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
+    </b-form-select>
+     <b-button variant="warning" @click="search">Buscar</b-button>
+        <img :src="src">
+    </div>
 
-      <b-button href="#" variant="primary">
-        <i class="far fa-paw-alt"></i>
-      </b-button>
-    </b-card>
-  </div>
 </template>
 
 <script>
@@ -32,8 +21,14 @@ export default {
   name: "Buscar", 
   data() {
       return {
-        text: ''
-      }
+      selected: ''
+      };
+    },
+    computed: {
+   src(){
+     let selected = this.selected;
+     return `https://dog.ceo/api/{selected}/image/random`
+   }
     }
 };
 </script>
