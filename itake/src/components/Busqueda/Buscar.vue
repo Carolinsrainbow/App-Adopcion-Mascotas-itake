@@ -1,5 +1,5 @@
 <template>
- <div>
+ <div id="busqueda">
    <h1>Selecciona una raza</h1>
     <b-form-select v-model="selecters" class="mb-3">
  <b-form-select-option :value = "null">Elija una raza</b-form-select-option>
@@ -51,3 +51,9 @@ methods: {
 }
 };
 </script>
+<style scoped>
+h1 {color: yellow;}
+#busqueda{
+  background-color: #32A4B3 ;
+}
+</style>

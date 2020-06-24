@@ -1,14 +1,13 @@
 <template>
   <div>
       <h1>Informacion General</h1>
-    <b-carousel
-      id="carousel-1"
+    <b-carousel id="carousel-1 perrosgirando"
       v-model="slide"
       :interval="4000"
       controls
       indicators
       background="#ababab"
-      img-width="1024"
+      img-width="500"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
