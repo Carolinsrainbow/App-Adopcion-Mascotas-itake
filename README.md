@@ -1,14 +1,17 @@
 # itake
-Trabajo Final: Carolina Herrera y  Lucas Osorio 
+**Trabajo Final: Carolina Herrera y Lucas Osorio**
  
-•	Descripción del proyecto:
-Existe una alta tasa de población de animales en situación de calle, sin cuidados están expuestos a accidentes, enfermedades y sobre población de ellos mismos. A su vez, el nuevo ciudadano es más conciente de que adoptando en lugar de comprar, pero existe poca información sobre las principales Fundaciones, sus actividades aun no son masivas, por lo que no pueden abarcar una ayuda más global, y el proceso de encontrar un tutor para la mascota se vuelve más largo, en algunos casos insostenible para la fundacion (implica los cuidados, alimentación, tratamiento médico, etc) 
-•	Propósito de la aplicación:
-Aumentar la taza de adopción de mascotas, menos nivel de perros callejeros y crear tutores más responsables con su cuidado.
+**•	Descripción del proyecto:**
+Existe una alta tasa de población animales en situación de calle, los cuales sin cuidado se ven expuestos a accidentes, enfermedades y sobrepoblación.
+A su vez el nuevo ciudadado está más conciente sobre la opción de adoptar en lugar de comprar, pero presentan dificultades por el nivel de información a la hora de buscar una mascota, por lo general se encuentran dentro de fundaciones animalistas, las cuales no tienen eventos masivos, y no poseen recursos suficientes para su difusión, por lo que 
+no pueden abarcar una ayuda más global, teniendo así procesos más largos para buscarle un dueño a cada mascota, muchas veces es insostenible economicamente para la fundación mantenerlos (implica los cuidados, alimentación, tratamiento médico, etc) y vuelven a la situación de calle. 
+
+**•	Propósito de la aplicación:**
+Aumentar la taza de adopción de mascotas, disminusión de animales en situación de calle y crear tutores más responsables con su cuidado.
 	Usuarios a los que apunta:
  Fundaciones Animalistas y personas que quieran adoptar mascotas 
  
- • Proceso de Creación del proyecto 
+ **• Proceso de Creación del proyecto **
  
 1- Creamos el proyecto desde una carpeta mediante el comando: " vue create 'itake'"
 2- Elegimos las opciones 
