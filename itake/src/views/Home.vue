@@ -2,6 +2,7 @@
   <div class="home">
     <Navbar></Navbar>
         <Carrusel />
+        
   </div>
 </template>
 
