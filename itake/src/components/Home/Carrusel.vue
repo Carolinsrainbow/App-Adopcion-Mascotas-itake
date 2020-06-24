@@ -8,7 +8,7 @@
       indicators
       background="#ababab"
       img-width="500"
-      img-height="480"
+      img-height="400"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -34,8 +34,8 @@
         <template v-slot:img>
           <img
             class="d-block img-fluid w-100"
-            width="1024"
-            height="480"
+            width="500"
+            height="400"
             src="https://cope-cdnmed.agilecontent.com/resources/jpg/9/0/1584446452109.jpg"
             alt="image slot"
           >

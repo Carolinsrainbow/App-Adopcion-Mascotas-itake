@@ -51,9 +51,3 @@ methods: {
 }
 };
 </script>
-<style scoped>
-h1 {color: yellow;}
-#busqueda{
-  background-color: #32A4B3 ;
-}
-</style>
