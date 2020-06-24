@@ -6,6 +6,14 @@ body {
   background: red;
 }
 
+.footer {
+  border-top: 1rem;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #32A4B3;
+}
+
 .carrusel {
   height: 200px !important;
 }
@@ -18,6 +26,11 @@ body {
   font-family: Lobster Two;
   font-weight: black;
   font-size: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */

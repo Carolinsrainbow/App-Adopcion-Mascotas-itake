@@ -2,6 +2,7 @@
   <div class="home">
     <Navbar></Navbar>
         <Carrusel />
+           <Footer />
         
   </div>
 </template>
@@ -10,12 +11,14 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
 import Carrusel from "@/components/Home/Carrusel.vue";
+import Footer from "@/components/Footer.vue"
 
 export default {
   name: "Home",
   components: {
     Navbar,
-    Carrusel
+    Carrusel,
+    Footer
   }
 };
 </script>
