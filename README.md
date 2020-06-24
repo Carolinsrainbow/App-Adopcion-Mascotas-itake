@@ -11,7 +11,7 @@ Aumentar la taza de adopción de mascotas, disminusión de animales en situació
 	Usuarios a los que apunta:
  Fundaciones Animalistas y personas que quieran adoptar mascotas 
  
- **• Proceso de Creación del proyecto **
+ **• Proceso de Creación del proyecto 
  
 1- Creamos el proyecto desde una carpeta mediante el comando: " vue create 'itake'"
 2- Elegimos las opciones 
