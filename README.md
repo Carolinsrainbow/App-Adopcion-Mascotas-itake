@@ -27,6 +27,8 @@ Aumentar la taza de adopción de mascotas, disminusión de animales en situació
 6. Creación de Componentes y vistas, más su incorporación en router 
 7. Ingreso a los componentes dentro de las vistas, adaptando su importación y su exportación 
 8. Incorporación dentro de carpeta SASS
+### Requisitos para desarrollarla
+#### DOG API (https://dog.ceo/dog-api/)
 
 ### USUARIOS DE PRUEBA
 adopto@mascota.cl //// info@mascota.cl 
