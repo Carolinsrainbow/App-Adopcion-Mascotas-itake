@@ -3,7 +3,6 @@
     <Navbar></Navbar>
         <Carrusel />
            <Footer />
-        
   </div>
 </template>
 

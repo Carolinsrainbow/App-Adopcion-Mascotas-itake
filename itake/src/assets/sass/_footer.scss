@@ -1,7 +1,11 @@
-.footer{
-    border-top: 1rem;
+#footer{
+     border-top: 1rem;
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     background-color: #32A4B3;
+    font-family: Lobster two;
+    font-weight: 400;
+    font-size: large;
+    color: white;
 }
