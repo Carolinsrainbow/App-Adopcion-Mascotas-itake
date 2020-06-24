@@ -1,7 +1,7 @@
 # H1 Trabajo Final:
 # H2 Carolina Herrera y Lucas Osorio
  
-# H3 Descripción del proyecto:**
+# H3 Descripción del proyecto:
 Existe una alta tasa de población animales en situación de calle, los cuales sin cuidado se ven expuestos a accidentes, enfermedades y sobrepoblación.
 A su vez el nuevo ciudadado está más conciente sobre la opción de adoptar en lugar de comprar, pero presentan dificultades por el nivel de información a la hora de buscar una mascota, por lo general se encuentran dentro de fundaciones animalistas, las cuales no tienen eventos masivos, y no poseen recursos suficientes para su difusión, por lo que 
 no pueden abarcar una ayuda más global, teniendo así procesos más largos para buscarle un dueño a cada mascota, muchas veces es insostenible economicamente para la fundación mantenerlos (implica los cuidados, alimentación, tratamiento médico, etc) y vuelven a la situación de calle. 
