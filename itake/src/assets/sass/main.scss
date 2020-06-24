@@ -1,21 +1,17 @@
 // Componentes del sitio //
 //@import 'vendors/node_modules/bootstrap/scss/bootstrap';
 
-@import'abstracts/variables';
+@import'_base';
 
-@import'vendors/jquery-ui';
-@import'base/_base';
+@import'grid';
+@import'footer';
 
-@import'layout/grid';
-@import'layout/footer';
+@import'forms';
 
-@import'layout/forms';
+@import'buttons';
+@import'carousel';
 
-@import'components/buttons';
-@import'components/carousel';
+@import'home';
+@import'contact';
 
-@import'pages/home';
-@import'pages/contact';
-
-@import'themes/theme';
-@import'themes/admin';
+@import'variables';
