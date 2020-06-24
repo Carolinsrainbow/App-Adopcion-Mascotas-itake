@@ -10,7 +10,7 @@ Aumentar la taza de adopción de mascotas, menos nivel de perros callejeros y cr
  
  • Proceso de Creación del proyecto 
  
-1- Creamos el proyecto desde una carpeta mediante el comando vue create "itake"
+1- Creamos el proyecto desde una carpeta mediante el comando: " vue create 'itake'"
 2- Elegimos las opciones 
 (Babel - Router - Vuex - CSS Processors - Linter - Unit testing - E2E testing)
 3- Ingresamos los comandos de lo que utilizaremos 
@@ -20,6 +20,9 @@ Aumentar la taza de adopción de mascotas, menos nivel de perros callejeros y cr
 - Firebase "comando: npm install --save firebase"
 - Firebase Tools "comando: npm install -g firebase-tools "
 4- Importación de los comandos creados en router y main
+5- Ingreso del totem del firebase 
+6- Creación de Componentes y vistas, más su incorporación en router 
+7- Ingreso a los componentes dentro de las vistas, adaptando su importación y su exportación 
 
 USUARIOS DE PRUEBA
 adopto@mascota.cl //// info@mascota.cl 
