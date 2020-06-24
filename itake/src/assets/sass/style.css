@@ -1,5 +1,23 @@
-#perrosgirando {
-  height: 300px;
+body {
+  background: yellow;
+}
+
+#nav {
+  background: red;
+}
+
+.carrusel {
+  height: 200px !important;
+}
+
+#nav-collapse {
+  height: 70px;
+}
+
+.navbar {
+  font-family: Lobster Two;
+  font-weight: black;
+  font-size: 2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

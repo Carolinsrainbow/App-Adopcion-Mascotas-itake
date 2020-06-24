@@ -1,17 +1,17 @@
 // Componentes del sitio //
-//@import 'vendors/node_modules/bootstrap/scss/bootstrap';
+//@import  'vendors/node_modules/bootstrap/scss/bootstrap';
+// base
+@import '_base';
 
-@import'_base';
+@import 'grid';
+@import 'footer';
 
-@import'grid';
-@import'footer';
+@import 'typography';
 
-@import'forms';
+@import 'buttons';
+@import 'carousel';
 
-@import'buttons';
-@import'carousel';
+@import 'home';
+@import 'contact';
 
-@import'home';
-@import'contact';
-
-@import'variables';
+@import 'variables';

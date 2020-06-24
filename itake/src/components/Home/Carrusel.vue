@@ -1,7 +1,8 @@
 <template>
   <div>
+    <b-container class="text-center">
       <h1>Informacion General</h1>
-    <b-carousel id="carousel-1 perrosgirando"
+    <b-carousel id="carrusel"
       v-model="slide"
       :interval="4000"
       controls
@@ -17,11 +18,11 @@
       <b-carousel-slide
         caption="First slide"
         text="Nulla vitae elit libero, a pharetra augue mollis interdum."
-        img-src="https://images.unsplash.com/photo-1517331156700-3c241d2b4d83?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1348&q=80"
+        img-src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"
       ></b-carousel-slide>
 
       <!-- Slides with custom text -->
-      <b-carousel-slide img-src="https://images.unsplash.com/photo-1581171383994-afd540b6a4da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1266&q=80">
+      <b-carousel-slide img-src="https://images.unsplash.com/photo-1587135672368-c47f813ccf0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
         <h1>Hello world!</h1>
       </b-carousel-slide>
 
@@ -36,18 +37,13 @@
             class="d-block img-fluid w-100"
             width="500"
             height="400"
-            src="https://cope-cdnmed.agilecontent.com/resources/jpg/9/0/1584446452109.jpg"
+            src="https://images.unsplash.com/photo-1587135672368-c47f813ccf0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
             alt="image slot"
           >
         </template>
       </b-carousel-slide>
-
     </b-carousel>
-
-    <p class="mt-4">
-      Slide #: {{ slide }}<br>
-      Sliding: {{ sliding }}
-    </p>
+    </b-container>
   </div>
 
   

@@ -1,5 +1,6 @@
 <template>
  <div id="busqueda">
+   <b-container>
    <h1>Selecciona una raza</h1>
     <b-form-select v-model="selecters" class="mb-3">
  <b-form-select-option :value = "null">Elija una raza</b-form-select-option>
@@ -11,8 +12,11 @@
 
     </b-form-select>
      <b-button variant="warning" @click="getSelecters">Buscar</b-button>
-       
+       </b-container>
+        
          <div>
+           <b-container class= "p-5">
+              <b-row>
     <b-card v-for="(selecter,i) in selecters" :key="i"
       title="Aqui van perritos"
       :img-src="selecter" 
@@ -23,6 +27,8 @@
     >
       <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
     </b-card>
+      </b-row>
+    </b-container>
   </div>
     </div>
 
@@ -51,3 +57,7 @@ methods: {
 }
 };
 </script>
+
+<style scoped>
+
+</style>

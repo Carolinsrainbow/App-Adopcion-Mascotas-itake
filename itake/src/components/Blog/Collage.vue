@@ -1,5 +1,6 @@
 <template>
   <div>
+    <b-container>
     <h1>hola</h1>
     <b-card
       overlay
@@ -11,6 +12,7 @@
     >
       <b-card-text>Some quick example text to build on the card and make up the bulk of the card's content.</b-card-text>
     </b-card>
+    </b-container>
   </div>
 </template>
 
