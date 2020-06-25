@@ -2,7 +2,7 @@
   <div class="home">
     <Navbar></Navbar>
         <Carrusel />
-           <Footer />
+           <Bajada />
   </div>
 </template>
 
@@ -10,14 +10,14 @@
 // @ is an alias to /src
 import Navbar from "@/components/Navbar.vue";
 import Carrusel from "@/components/Home/Carrusel.vue";
-import Footer from "@/components/Footer.vue"
+import Bajada from "@/components/Bajada.vue"
 
 export default {
   name: "Home",
   components: {
     Navbar,
     Carrusel,
-    Footer
+    Bajada
   }
 };
 </script>

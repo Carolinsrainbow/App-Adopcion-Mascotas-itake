@@ -1,24 +1,23 @@
 <template>
-<div>
+  <div>
     <Navbar></Navbar>
-<h1> Los cuidados que debes tener al adoptar una mascota</h1>
+    <h1>Los cuidados que debes tener al adoptar una mascota</h1>
     <Collage></Collage>
-       <Footer />
-</div>
+    <Bajada />
+  </div>
 </template>
 
 <script>
 import Collage from "@/components/Blog/Collage.vue";
 import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue"
-
+import Bajada from "@/components/Bajada.vue";
 
 export default {
-    name: 'Blog',
+  name: "Blog",
   components: {
     Navbar,
     Collage,
-    Footer,
+    Bajada
   },
-}
+};
 </script>

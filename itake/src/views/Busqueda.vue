@@ -2,14 +2,14 @@
 <div>
         <Navbar></Navbar>
         <Buscar />
-        <Footer />
+        <Bajada />
     </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Buscar from "@/components/Busqueda/Buscar.vue";
-import Footer from "@/components/Footer.vue"
+import Bajada from "@/components/Bajada.vue"
 
 
 export default {
@@ -17,7 +17,7 @@ export default {
   components: {
     Navbar,
     Buscar,
-    Footer
+    Bajada
   },
 }
 </script>

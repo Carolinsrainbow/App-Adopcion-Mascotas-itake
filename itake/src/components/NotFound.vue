@@ -8,14 +8,14 @@
 
 <script>
 import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue"
+import Bajada from "@/components/Bajada.vue"
 
 
 export default {
     name: 'NotFound',
   components: {
     Navbar,
-    Footer
+    Bajada
   },
 }
 </script>

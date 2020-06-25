@@ -2,21 +2,21 @@
   <div>
     <Navbar></Navbar>
 <Form />
-       <Footer />
+       <Bajada />
   </div>
 </template>
 
 <script>
 import Navbar from "@/components/Navbar.vue";
 import Form from "@/components/Login/Form.vue";
-import Footer from "@/components/Footer.vue"
+import Bajada from "@/components/Bajada.vue"
 
 export default {
   name: "Login",
   components: {
     Form,
     Navbar,
-    Footer
+    Bajada
   },
 };
 </script>
