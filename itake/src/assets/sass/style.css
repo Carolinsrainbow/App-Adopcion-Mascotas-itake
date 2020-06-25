@@ -11,7 +11,7 @@
 }
 
 #nav-collapse {
-  height: 70px;
+  height: 60px;
 }
 
 .navbar {
@@ -21,6 +21,24 @@
 }
 
 #Navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+#usuario a {
+  color: #32A4B3;
+  font-size: 15px;
+}
+
+#texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-size: 20px;
+  text-align: center;
+  padding: 5%;
+}
+
+#bajada a {
   text-decoration: none;
   color: white;
 }
