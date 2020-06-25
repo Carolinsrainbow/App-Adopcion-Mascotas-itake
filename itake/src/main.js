@@ -27,6 +27,21 @@ const firebaseConfig = {
 
 Firebase.initializeApp(firebaseConfig)
 
+// let auth = Firebase.auth();
+// let db = Firebase.firestore();
+// db.collection('coleccionsito').doc('').onSnapshot( )
+// let Fire = new Vue({
+// data:{
+
+// },
+// methods:{
+//   state(collback){
+//     auth.onAuthStateChanged(function(user){
+//       collback(user);
+//     })
+//   }
+// }
+// })
 
 new Vue({
   router,

@@ -26,6 +26,7 @@
       class="mb-2"
     >
       <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
+      <b-button variant="warning">Adoptame</b-button>
     </b-card>
       </b-row>
     </b-container>
@@ -50,11 +51,13 @@ mounted (){
 methods: {
   getSelecters(){
     axios.get('https://dog.ceo/api/breeds/image/random/3').then(response =>{
+      https://dog.ceo/api/breeds/image/random/3
       this.selecters = response.data.message
     })
     .catch(e => console.log(e))
   }
-}
+},
+
 };
 </script>
 

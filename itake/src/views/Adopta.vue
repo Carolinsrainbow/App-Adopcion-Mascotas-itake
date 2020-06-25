@@ -1,7 +1,7 @@
 <template>
     <div>
  <Navbar></Navbar>
-      <Gestion/>
+ <Gestion />
     <Bajada />
     </div>
 </template>

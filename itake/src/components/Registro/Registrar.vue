@@ -10,7 +10,7 @@
     <b-form-input type="text" placeholder="Ingresa tu email" v-model="email"></b-form-input>
     <h3>Ingresa tu contraseña</h3>
     <b-form-input type="text" placeholder="Please input password" v-model="password"></b-form-input>
-    <b-button variant="warning" @click="login">Ingresar</b-button>
+    <b-button variant="warning" >Ingresar</b-button>
     </div>
   </b-container>
   </div>
@@ -19,13 +19,16 @@
 import Firebase from "firebase";
 
 export default{
-    data() {
+     data() {
         return {
             name:"",
-            email:"",
+           email:"",
             password:"",
         };
     },
+methods: {
+  sub
+}
     }
 
 </script>
