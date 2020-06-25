@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container class="text-center">
+    <b-container fluid class="text-center">
       <h1>Bienvenidos</h1>
     <b-carousel id="carrusel"
       v-model="slide"
@@ -8,8 +8,8 @@
       controls
       indicators
       background="#ababab"
-      img-width="500"
-      img-height="400"
+      img-width="100"
+      img-height="100"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"
@@ -24,7 +24,7 @@
       <!-- Slides with custom text -->
       <b-carousel-slide img-src="https://images.unsplash.com/photo-1587135672368-c47f813ccf0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
         <h1>Hello world!</h1>
-        <b-button variant="primary"><router-link to="/busqueda">Adopta!</router-link></b-button>
+        <b-button variant="primary"><router-link to="/adopta">Adopta!</router-link></b-button>
       </b-carousel-slide>
 
       <!-- Slides with image only -->
