@@ -1,5 +1,6 @@
 <template>
   <div class="parallax">
+ 
     <b-container>
     <h1>hola</h1>
     <b-card

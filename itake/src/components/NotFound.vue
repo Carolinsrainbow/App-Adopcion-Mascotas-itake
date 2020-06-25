@@ -1,7 +1,9 @@
 <template>
 <div>
 <Navbar></Navbar>
-    <h1> La ruta no es válida</h1>
+    <h1> Humano esta ruta no es válida</h1>
+    <img src="https://images.unsplash.com/photo-1526636355180-fe37f8ce86cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="invalida">
+          <Bajada />
     </div>
 </template>
 
