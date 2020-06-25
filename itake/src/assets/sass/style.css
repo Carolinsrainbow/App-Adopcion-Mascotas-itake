@@ -1,4 +1,4 @@
-#footer {
+#bajada {
   border-top: 1rem;
   padding: 1rem;
   display: grid;
@@ -24,7 +24,7 @@
   font-size: 2rem;
 }
 
-.navbar a {
+#Navbar a {
   text-decoration: none;
   color: white;
 }

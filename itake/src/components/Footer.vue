@@ -1,9 +1,17 @@
 <template>
-<div id="footer">
- <h2>Ubicación</h2>
-  <h2>RRSS</h2>
-   <h2>Apoyanos</h2>
-    </div>    
+<div id="bajada">
+   
+            <div class="ubicacion">
+   <h2>Ubicación</h2>
+            </div>
+            <div class="rrss">
+                 <h2>RRSS</h2>
+            </div>
+            <div class="contacto">
+                 <h2>Contacto</h2>
+            </div>
+            
+    </div>
 </template>
 
 <script>
