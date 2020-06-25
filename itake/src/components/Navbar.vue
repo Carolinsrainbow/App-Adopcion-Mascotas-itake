@@ -22,12 +22,12 @@
             <router-link to="/adopta">patita</router-link>
           </b-nav-item>
           <b-nav-item>
-            <router-link to="/registrate">Registrate</router-link>
+            <router-link to="/registro">Registrate</router-link>
           </b-nav-item>
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
             <template v-slot:button-content>
-              <em>User</em>
+              <em>Ingresa</em>
             </template>
             <b-nav-item></b-nav-item>
             <div id="usuario">

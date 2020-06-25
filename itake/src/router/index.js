@@ -7,6 +7,7 @@ import Busqueda from "../views/Busqueda.vue";
 import Firebase from 'firebase'
 import NotFound from "../components/NotFound.vue";
 import Adopta from "../views/Adopta.vue"
+import Registro from "../views/Registro.vue"
 
 
 Vue.use(VueRouter);
@@ -35,6 +36,11 @@ const routes = [{
     path: "/adopta",
     name: "Adopta",
     component: Adopta,
+  },
+  {
+    path: "/registro",
+    name: "Registro",
+    component: Registro,
   },
   {
     path: "*",
