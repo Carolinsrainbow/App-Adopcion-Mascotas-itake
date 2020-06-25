@@ -3,7 +3,7 @@
       <b-container>
     <h1>Bienvenido a</h1>
     <h2>Para navegar por el sitio necesitas logearte</h2>
-    <div class="inicio justify-content-center">
+    <div id="inicio">
     <h3>Ingresa tu correo</h3>
     <b-form-input type="text" placeholder="Ingresa tu email" v-model="email"></b-form-input>
     <h3>Ingresa tu contraseña</h3>
