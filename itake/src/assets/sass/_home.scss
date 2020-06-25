@@ -22,10 +22,14 @@
     grid-template-columns: 1fr 1fr;
     font-size: 20px;
     text-align: center;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 #bajada a{
     text-decoration: none;
     color: white;
+}
 
+.card-body {
+    padding:0 !important;
 }

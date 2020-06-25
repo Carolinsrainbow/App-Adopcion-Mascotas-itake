@@ -2,7 +2,9 @@
   <div class="home">
     <Navbar></Navbar>
         <Carrusel />
+            <h2>Fundación itake</h2>
         <div id=texto>
+          
           <div id="subt1">
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, varius rutrum urna hac torquent pharetra quisque ullamcorper, justo eros ultrices vehicula vulputate mollis. Ac pharetra senectus dapibus taciti cursus proin curabitur luctus, egestas dictum vivamus varius torquent tristique vehicula, lacinia nostra aptent erat massa nisl nulla. Suscipit sollicitudin pellentesque luctus vulputate fringilla sociis facilisis, ultrices urna venenatis tristique tortor a, nisi ultricies integer platea pharetra dictumst.</p>
           </div>
@@ -10,18 +12,36 @@
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, varius rutrum urna hac torquent pharetra quisque ullamcorper, justo eros ultrices vehicula vulputate mollis. Ac pharetra senectus dapibus taciti cursus proin curabitur luctus, egestas dictum vivamus varius torquent tristique vehicula, lacinia nostra aptent erat massa nisl nulla. Suscipit sollicitudin pellentesque luctus vulputate fringilla sociis facilisis, ultrices urna venenatis tristique tortor a, nisi ultricies integer platea pharetra dictumst.</p>
             </div>
           </div>
-          <div>
-            <div>
+        
+<div id="card-body" class="p-5">
+  <b-container> 
+    <b-row>
+      <b-col md="3">
   <b-card
-    img-src="https://picsum.photos/600/300/?image=25"
-    img-alt="Image"
-    img-top
-    tag="article"
-    style="max-width: 20rem;"
-    class="mb-2"
+    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
   >
   </b-card>
-</div>
+ </b-col>
+  <b-col md="3">
+  <b-card
+    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+  >
+  </b-card>
+   </b-col>
+   <b-col md="3">
+  <b-card
+    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+  >
+  </b-card>
+    </b-col>
+  <b-col md="3">
+  <b-card
+    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+  >
+  </b-card>
+  </b-col>
+  </b-row>
+  </b-container>
 </div>
            <Bajada />
   </div>

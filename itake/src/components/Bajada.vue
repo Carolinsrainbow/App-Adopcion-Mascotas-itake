@@ -20,6 +20,9 @@
     </div>
     <div class="contacto">
       <h2>Contacto</h2>
+      <h3>Correos de contacto </h3>
+      <h4> adopto@mascota.cl </h4>
+      <h4>  info@mascota.cl </h4>
     </div>
   </div>
 </template>
