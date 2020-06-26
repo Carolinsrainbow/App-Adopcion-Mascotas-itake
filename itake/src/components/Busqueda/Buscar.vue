@@ -21,6 +21,9 @@
             tag="article"
             style="max-width: 20rem;"
             class="mb-2"
+            :id="perro.id"
+            :like="perro.like"
+            @makeLike = "makeLike"
           >
             <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
             <b-button variant="warning">Adoptame</b-button>
@@ -42,6 +45,7 @@
 import axios from "axios";
 export default {
   name: "Buscar",
+  props: [],
   data() {
     return {
       razas: ["Chihuahua", "Boxer", "Labrador","Germanshepherd","Husky"],
@@ -54,6 +58,9 @@ export default {
     this.getBreedRandomDog("labrador");
   },
   methods: {
+    makeLike(id){
+      this.$emit('makeLike', this.id)
+    },
 
     getBreedRandomDog(breed) {
       this.arregloPerros = []
