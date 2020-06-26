@@ -29,23 +29,14 @@ export default {
     };
   },
   methods: {
-    registrar() {
-      this.error = "";
-      if (this.name && this.email && this.password) {
-        Firebase.auth()
-          .createUserWithEmailAndPassword(this.email, this.password)
-          .then(data => {
-            alert(`Cuenta creada ${data.name}`)
-            data.user
-              .updateProfile({
-                displayName: this.name
-              })
-              .then(() => {});
-          })
-          .catch(err => {
-            this.error = err.message;
-          });
-      }
+    registrar () {
+    Firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(user => {
+      alert(`Cuenta creada ${this.name}`);
+      this.$router.push("/adopta");
+    },
+    err => {
+      alert(err.message);
+    });
     }
   }
 };
