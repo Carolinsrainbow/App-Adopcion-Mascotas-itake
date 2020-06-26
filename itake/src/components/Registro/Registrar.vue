@@ -30,9 +30,9 @@ export default {
   },
   methods: {
     registrar () {
-    Firebase.auth().createUserWithEmailAndPassword(this.email, this.password).then(user => {
+    Firebase.auth().createUserWithEmailAndPassword(this.email,this.password).then(user => {
       alert(`Cuenta creada ${this.name}`);
-      this.$router.push("/adopta");
+      this.$router.push("/busqueda");
     },
     err => {
       alert(err.message);
