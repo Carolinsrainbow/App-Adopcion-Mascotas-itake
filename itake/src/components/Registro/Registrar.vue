@@ -10,7 +10,7 @@
     <b-form-input type="text" placeholder="Ingresa tu email" v-model="email"></b-form-input>
     <h3>Ingresa tu contraseña</h3>
     <b-form-input type="text" placeholder="Please input password" v-model="password"></b-form-input>
-    <b-button variant="warning" >Ingresar</b-button>
+    <b-button variant="warning" @click="registrar" >Ingresar</b-button>
     </div>
   </b-container>
   </div>
@@ -27,7 +27,16 @@ export default{
         };
     },
 methods: {
-  sub
+  registrar() {
+
+    Firebase.auth().createUserWithEmailAndPassword(this.email, thi.password).then(data =>{
+      data.user.updateProfile({
+        displayName:this.name
+      })
+      .then(() => {});
+    })
+    .catch(err => { this.error = err.message;});
+  }
 }
     }
 
