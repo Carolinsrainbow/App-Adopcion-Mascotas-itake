@@ -18,6 +18,5 @@ export default {
         Gestion,
         Bajada
     }
-
 }
 </script>

@@ -68,10 +68,9 @@ h1 {
   background-size: cover;
 }
 
-.inicio {
+#inicio {
   border: black 1px solid;
   padding: 20px;
-  width: 500px;
 }
 
 /*# sourceMappingURL=style.css.map */
