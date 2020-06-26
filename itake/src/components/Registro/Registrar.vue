@@ -15,6 +15,7 @@
     </b-container>
   </div>
 </template>
+
 <script>
 import Firebase from "firebase";
 
@@ -34,6 +35,7 @@ export default {
         Firebase.auth()
           .createUserWithEmailAndPassword(this.email, this.password)
           .then(data => {
+            alert(`Cuenta creada ${data.name}`)
             data.user
               .updateProfile({
                 displayName: this.name
