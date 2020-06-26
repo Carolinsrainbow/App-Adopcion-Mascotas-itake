@@ -24,9 +24,13 @@
           >
             <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
             <b-button variant="warning">Adoptame</b-button>
-            <svg class="svg-icon" viewBox="0 0 20 20" width=25%>
-							<path fill="yellow" d="M16.85,7.275l-3.967-0.577l-1.773-3.593c-0.208-0.423-0.639-0.69-1.11-0.69s-0.902,0.267-1.11,0.69L7.116,6.699L3.148,7.275c-0.466,0.068-0.854,0.394-1,0.842c-0.145,0.448-0.023,0.941,0.314,1.27l2.871,2.799l-0.677,3.951c-0.08,0.464,0.112,0.934,0.493,1.211c0.217,0.156,0.472,0.236,0.728,0.236c0.197,0,0.396-0.048,0.577-0.143l3.547-1.864l3.548,1.864c0.18,0.095,0.381,0.143,0.576,0.143c0.256,0,0.512-0.08,0.729-0.236c0.381-0.277,0.572-0.747,0.492-1.211l-0.678-3.951l2.871-2.799c0.338-0.329,0.459-0.821,0.314-1.27C17.705,7.669,17.316,7.343,16.85,7.275z M13.336,11.754l0.787,4.591l-4.124-2.167l-4.124,2.167l0.788-4.591L3.326,8.5l4.612-0.67l2.062-4.177l2.062,4.177l4.613,0.67L13.336,11.754z"></path>
-						</svg>
+            <svg v-if="!like" @click="like=true" style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="black" d="M12.1,18.55L12,18.65L11.89,18.55C7.14,14.24 4,11.39 4,8.5C4,6.5 5.5,5 7.5,5C9.04,5 10.54,6 11.07,7.36H12.93C13.46,6 14.96,5 16.5,5C18.5,5 20,6.5 20,8.5C20,11.39 16.86,14.24 12.1,18.55M16.5,3C14.76,3 13.09,3.81 12,5.08C10.91,3.81 9.24,3 7.5,3C4.42,3 2,5.41 2,8.5C2,12.27 5.4,15.36 10.55,20.03L12,21.35L13.45,20.03C18.6,15.36 22,12.27 22,8.5C22,5.41 19.58,3 16.5,3Z" />
+    </svg>
+
+    <svg  v-if="like" @click="like=false" style="width:24px;height:24px" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
+    </svg>
           </b-card>
         </b-row>
       </b-container>
@@ -42,13 +46,15 @@ export default {
     return {
       razas: ["Chihuahua", "Boxer", "Labrador","Germanshepherd","Husky"],
       selecters: "",
-      arregloPerros: []
+      arregloPerros: [],
+      like: false
     };
   },
   mounted() {
     this.getBreedRandomDog("labrador");
   },
   methods: {
+
     getBreedRandomDog(breed) {
       this.arregloPerros = []
       axios
