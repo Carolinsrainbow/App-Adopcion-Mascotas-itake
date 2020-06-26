@@ -4,11 +4,7 @@
       <h1>Selecciona una raza</h1>
       <b-form-select v-model="selecters" class="mb-3">
         <b-form-select-option :value="null">Elija una raza</b-form-select-option>
-        <b-form-select-option
-          v-for="(raza, index) in razas"
-          :key="index"
-          :value="raza.toLowerCase()"
-        >{{raza}}</b-form-select-option>
+        <b-form-select-option v-for="(raza, index) in razas" :key="index" :value="raza.toLowerCase()">{{raza}}</b-form-select-option>
       </b-form-select>
       <b-button variant="warning" @click="getBreedRandomDog(selecters)">Buscar</b-button>
     </b-container>
@@ -41,37 +37,25 @@ export default {
   name: "Buscar",
   data() {
     return {
-      razas: ["german ", "boxer", "labrador", "beagle"]
+      razas: ["Chihuahua", "Boxer", "Labrador","Germanshepherd","Husky"],
       selecters: "",
       arregloPerros: []
     };
   },
   mounted() {
-    this.getAllBreeds();
     this.getBreedRandomDog("labrador");
   },
-    methods: {
-    getAllBreeds(breed) {
-
-this.razas = []
-axios.get(`https://dog.ceo/api/breeds/list/all`).then(response =>{
-  response.data.message.forEach()
-})
-    },
-    
+  methods: {
     getBreedRandomDog(breed) {
       this.arregloPerros = []
       axios
         .get(`https://dog.ceo/api/breed/${breed}/images/random/12`)
         .then(response => {
-          //dog.ceo/api/breeds/image/random/3
-          // console.log(response);
           response.data.message.forEach(perro => this.arregloPerros.push(perro));
         })
         .catch(e => console.log(e));
     }
   }
-   
 };
 </script>
 
