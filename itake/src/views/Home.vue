@@ -18,25 +18,25 @@
     <b-row>
       <b-col md="3">
   <b-card
-    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+    img-src="https://images.unsplash.com/photo-1415369629372-26f2fe60c467?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
   >
   </b-card>
  </b-col>
   <b-col md="3">
   <b-card
-    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+    img-src="https://images.pexels.com/photos/3377909/pexels-photo-3377909.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   >
   </b-card>
    </b-col>
    <b-col md="3">
   <b-card
-    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+    img-src="https://images.pexels.com/photos/1784289/pexels-photo-1784289.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   >
   </b-card>
     </b-col>
   <b-col md="3">
   <b-card
-    img-src="https://images.unsplash.com/photo-1533580205665-455aa93be264?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1364&q=80"
+    img-src="https://images.pexels.com/photos/1448055/pexels-photo-1448055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
   >
   </b-card>
   </b-col>
