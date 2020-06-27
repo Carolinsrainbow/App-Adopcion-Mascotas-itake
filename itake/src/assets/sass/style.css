@@ -18,17 +18,25 @@
 h1 {
   font-size: 40 px;
   padding: 2%;
-  font-family: "Roboto Condensed";
 }
 
 #galeria {
+  max-width: 800px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   max-width: 800px;
+  margin: 5%;
+  grid-gap: 1rem;
+  padding: 3%;
+}
+
+h2 {
+  font-family: lobster two;
+  font-weight: bolder;
 }
 
 img {
-  width: 400px;
+  width: 90%;
 }
 
 .seccion1 {
@@ -57,7 +65,6 @@ img {
 
 .seccion7 {
   grid-area: 2/4/3/5;
-  height: 300px;
 }
 
 .seccion8 {

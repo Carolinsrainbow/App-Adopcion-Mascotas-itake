@@ -28,12 +28,13 @@
         alt="invalida"
       />
       </div>
-            <div class="seccion2">
-         <img
-        src="https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+          <div class="seccion2">
+                     <img
+        src="https://images.pexels.com/photos/1123999/pexels-photo-1123999.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         alt="invalida"
       />
       </div>
+ 
            <div class="seccion3">
            <img
         src="https://images.unsplash.com/photo-1553322396-0c9cd410975e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"
@@ -49,7 +50,7 @@
       </div>
       <div class="seccion5">
              <img
-        src="https://images.pexels.com/photos/545016/pexels-photo-545016.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+        src="https://images.pexels.com/photos/46024/pexels-photo-46024.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
         alt="invalida"
       />
       </div>
@@ -59,12 +60,13 @@
         alt="invalida"
       />
       </div>
-      <div class="seccion7">
-                     <img
-        src="https://images.pexels.com/photos/1123999/pexels-photo-1123999.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
+                 <div class="seccion7">
+         <img
+        src="https://images.pexels.com/photos/1981111/pexels-photo-1981111.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260"
         alt="invalida"
       />
       </div>
+
       <div class="seccion8">
                      <img
         src="https://images.pexels.com/photos/179217/pexels-photo-179217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
