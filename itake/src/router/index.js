@@ -7,7 +7,7 @@ import Busqueda from "../views/Busqueda.vue";
 import Firebase from 'firebase'
 import NotFound from "../components/NotFound.vue";
 import Adopta from "../views/Adopta.vue"
-import Registro from "../views/Registro.vue"
+import Registro from "../views/Registro.vue";
 
 
 Vue.use(VueRouter);

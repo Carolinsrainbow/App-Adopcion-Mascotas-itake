@@ -7,8 +7,48 @@
     background-size: cover;
 }
 
-#inicio {
-    border: black 1px solid;
-    padding: 20px; 
+//--Vista Login--
+.login-fondo{
+background-image: url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
 }
 
+.formulario {
+    border: black 1px solid;
+    background: rgba(0,0,0, .15);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgb(0, 0, 0,.56);
+    color: white;
+}
+
+.form-control{
+    background: rgb(0, 0, 0,.16)!important;
+    border-style: none  !important;
+    transition: 0.5s ease-in ;
+    box-shadow: none !important;
+}
+
+.form-control::placeholder{
+    background: rgb(0, 0, 0,.16)!important;
+    color: white!important;
+    }
+
+.form-control:focus{
+     background: none !important;
+     outline: none !important;
+        }
+
+.ingresar{
+    padding: 10px;
+    font-size: 16px;
+    box-shadow: 0 0 30px rgb(0, 0, 0,.56);
+    transition: 0.5s ease-in ;
+}
+
+.ingresar:hover{
+    color: white;
+}
