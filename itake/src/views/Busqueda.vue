@@ -2,7 +2,6 @@
 <div>
         <Navbar></Navbar>
         <Buscar />
-        
         <Bajada />
     </div>
 </template>

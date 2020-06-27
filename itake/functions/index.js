@@ -71,4 +71,3 @@ router.delete("/perro/:id", async (req, res) => {
   res.send(perro);
 });
 exports.perros = functions.https.onRequest(router);
-​

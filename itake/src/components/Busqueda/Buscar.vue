@@ -42,7 +42,6 @@
 import axios from "axios";
 export default {
   name: "Buscar",
-  props: ["id","like"],
   data() {
     return {
       razas: ["Chihuahua", "Boxer", "Labrador","Germanshepherd","Husky"],
