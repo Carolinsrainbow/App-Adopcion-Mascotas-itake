@@ -199,4 +199,10 @@ img {
   color: white;
 }
 
+@media (max-width: 575.98px) {
+  .formulario {
+    padding-left: 40px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
