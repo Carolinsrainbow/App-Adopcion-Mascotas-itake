@@ -14,7 +14,7 @@ export default new Vuex.Store({
       state.perrosPorAdoptar.push(perro)
     },
     eliminarPerroPorAdoptar(state, perro) {
-      state.perrosPorAdoptar.filter(this.perro)
+      state.perrosPorAdoptar.splice(perro, 1)
     }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
