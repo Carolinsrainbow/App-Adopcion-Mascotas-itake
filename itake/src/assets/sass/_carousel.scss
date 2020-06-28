@@ -63,14 +63,16 @@ img {
 }
 
 @media (max-width: 575.98px) {
-    #texto{
-        display: flex
-    }
-.subt1{
-    width:100%
-}
-.subt2{
-    width:100%
-}
-  
+  #card-body{
+      display: none;
+  }
+  #texto{
+      display: grid
+  }
+  #galeria{
+      display: none
+  }
+  p{
+      display:none
+  }
 }

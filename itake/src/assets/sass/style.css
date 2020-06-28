@@ -91,16 +91,20 @@ img {
 }
 
 @media (max-width: 575.98px) {
+  #card-body {
+    display: none;
+  }
+
   #texto {
-    display: flex;
+    display: grid;
   }
 
-  .subt1 {
-    width: 100%;
+  #galeria {
+    display: none;
   }
 
-  .subt2 {
-    width: 100%;
+  p {
+    display: none;
   }
 }
 #nav-collapse {
