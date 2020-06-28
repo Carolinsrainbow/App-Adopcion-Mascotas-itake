@@ -20,6 +20,10 @@ h1 {
   padding: 2%;
 }
 
+p {
+  padding: 5%;
+}
+
 #galeria {
   max-width: 800px;
   display: grid;
@@ -33,6 +37,7 @@ h1 {
 h2 {
   font-family: lobster two;
   font-weight: bolder;
+  padding-top: 3%;
 }
 
 img {
@@ -120,15 +125,15 @@ img {
 
 .login-fondo {
   background-image: url("https://images.unsplash.com/photo-1522276498395-f4f68f7f8454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1349&q=80");
-  background-repeat: no-repeat;
-  background-size: cover;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .formulario {
-  border: black 1px solid;
-  background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.35);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.56);

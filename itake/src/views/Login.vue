@@ -1,7 +1,9 @@
 <template>
   <div>
     <Navbar></Navbar>
+   
 <Form />
+
        <Bajada />
   </div>
 </template>

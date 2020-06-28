@@ -1,7 +1,7 @@
 <template>
   <div class="login-fondo">
     <b-container >
-      <b-row class="justify-content-center pt-5 mt-5 mr-1 ">
+      <b-row class="justify-content-center pt-5  mr-1 ">
         <div  class="col-md-4 formulario">
           <b-form >
             <b-form-group class="text-center pt-3">
