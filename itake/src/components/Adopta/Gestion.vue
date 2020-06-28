@@ -1,26 +1,22 @@
 <template>
   <div>
     <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">First</th>
-          <th scope="col">Last</th>
-          <th scope="col">Handle</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="perro in getPerrosPorAdoptar" :key="perro">
-          <th scope="row">1</th>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
-      </tbody>
+   <div>
+  <b-card
+    v-for="perro in getPerrosPorAdoptar" :key="perro"
+    title="Card Title"
+    :img-src="perro"
+    img-alt="Image"
+    img-top
+    tag="article"
+    style="max-width: 20rem;"
+    class="mb-2"
+  >
       <!-- el perro de abajo sale del v-for  -->
-      <button @click="alClickearEliminar(perro)">Eliminar</button>
-    </table>
+   <button @click="alClickearEliminar(perro)">Eliminar</button>
+  </b-card>
+</div>
+   
 
     <h2>Necesitamos Saber ...</h2>
 
@@ -43,6 +39,7 @@
 </template>
 
 <script>
+import axios from "axios"
 import { mapState, mapGetters, mapActions } from "vuex";
 
 export default {

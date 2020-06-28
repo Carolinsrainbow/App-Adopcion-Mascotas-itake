@@ -13,8 +13,8 @@ export default new Vuex.Store({
     agregarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.push(perro)
     },
-    EliminarPerro(state, perro) {
-      state.perrosPorAdoptar.filter()
+    eliminarPerroPorAdoptar(state, perro) {
+      state.perrosPorAdoptar.filter(this.perro)
     }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
@@ -22,10 +22,10 @@ export default new Vuex.Store({
   actions: {
     agregarPerroPorAdoptar(context, perro) {
       context.commit('agregarPerroPorAdoptar', perro)
-    }
-     //elimarPerroPorAdoptar(context, perro){
-    // context.commit("eliminarPerroPorAdoptar",perro)
-     //     }
+    },
+    eliminarPerroPorAdoptar(context, perro){
+     context.commit("eliminarPerroPorAdoptar",perro)
+          }
     // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 
