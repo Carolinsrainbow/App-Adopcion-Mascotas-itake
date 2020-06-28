@@ -1,4 +1,4 @@
-#  Trabajo Final:
+#  Trabajo Final: iTake
 ## Carolina Herrera y Lucas Osorio
  
 ### Descripción del proyecto:
@@ -17,11 +17,11 @@ Aumentar la taza de adopción de mascotas, disminusión de animales en situació
 2. Elegimos las opciones 
 (Babel - Router - Vuex - CSS Processors - Linter - Unit testing - E2E testing)
 3. Ingresamos los comandos de lo que utilizaremos 
-- Boostrap Vue "comando: npm i bootstrap-vue --save"
-- SASS "comando: npm install -D node-sass sass-loader"
-- Axios "comando: npm install axios --save"
-- Firebase "comando: npm install --save firebase"
-- Firebase Tools "comando: npm install -g firebase-tools "
+- Boostrap Vue [npm i bootstrap-vue --save]
+- SASS [npm install -D node-sass sass-loader]
+- Axios [npm install axios --save]
+- Firebase [npm install --save firebase]
+- Firebase Tools [npm install -g firebase-tools]
 4. Importación de los comandos creados en router y main
 5. Ingreso del totem del firebase 
 6. Creación de Componentes y vistas, más su incorporación en router 
