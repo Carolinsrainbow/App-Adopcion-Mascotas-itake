@@ -1,5 +1,5 @@
-#bajada{
-     border-top: 1rem;
+#bajada {
+    border-top: 1rem;
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -8,4 +8,20 @@
     font-weight: 400;
     font-size: large;
     color: white;
+}
+
+@media (max-width: 575.98px) {
+    #bajada {
+        display:flex
+    }
+
+    .ubicacion,
+    .rrss,
+    h2 {
+        display: none
+    }
+
+    .contacto {
+        width: 100%;
+    }
 }

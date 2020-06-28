@@ -30,7 +30,6 @@ const firebaseConfig = {
 };
 
 Firebase.initializeApp(firebaseConfig)
-
 // let auth = Firebase.auth();
 // let db = Firebase.firestore();
 // db.collection('coleccionsito').doc('').onSnapshot( )

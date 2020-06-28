@@ -4,11 +4,11 @@
         <Carrusel />
             <h2>Fundación itake</h2>
         <div id=texto>
-          
-          <div id="subt1">
+    
+          <div class="subt1">
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, varius rutrum urna hac torquent pharetra quisque ullamcorper, justo eros ultrices vehicula vulputate mollis. Ac pharetra senectus dapibus taciti cursus proin curabitur luctus, egestas dictum vivamus varius torquent tristique vehicula, lacinia nostra aptent erat massa nisl nulla. Suscipit sollicitudin pellentesque luctus vulputate fringilla sociis facilisis, ultrices urna venenatis tristique tortor a, nisi ultricies integer platea pharetra dictumst.</p>
           </div>
-          <div id="subt2">
+          <div class="subt2">
             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit, varius rutrum urna hac torquent pharetra quisque ullamcorper, justo eros ultrices vehicula vulputate mollis. Ac pharetra senectus dapibus taciti cursus proin curabitur luctus, egestas dictum vivamus varius torquent tristique vehicula, lacinia nostra aptent erat massa nisl nulla. Suscipit sollicitudin pellentesque luctus vulputate fringilla sociis facilisis, ultrices urna venenatis tristique tortor a, nisi ultricies integer platea pharetra dictumst.</p>
             </div>
           </div>
