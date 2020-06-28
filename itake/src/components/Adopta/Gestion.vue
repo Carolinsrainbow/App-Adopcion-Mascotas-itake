@@ -11,13 +11,15 @@
         </tr>
       </thead>
       <tbody>
-        <tr v-for="perro in getPerrosPorAdoptar" :key>
+        <tr v-for="perro in getPerrosPorAdoptar" :key="perro">
           <th scope="row">1</th>
           <td>Mark</td>
           <td>Otto</td>
           <td>@mdo</td>
         </tr>
       </tbody>
+      <!-- el perro de abajo sale del v-for  -->
+      <button @click="alClickearEliminar(perro)">Eliminar</button>
     </table>
 
     <h2>Necesitamos Saber ...</h2>
@@ -55,6 +57,14 @@ export default {
       celular: "",
       bautizo: ""
     };
+  },
+
+  methods: {
+    ...mapActions(["eliminarPerroPorAdoptar"]),
+
+    alClickearEliminar(perro) {
+      this.eliminarPerroPorAdoptar(perro)
+    }
   },
 
   computed: {

@@ -12,13 +12,21 @@ export default new Vuex.Store({
   mutations: {
     agregarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.push(perro)
+    },
+    EliminarPerro(state, perro) {
+      state.perrosPorAdoptar.filter()
     }
+    // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
 
   actions: {
-    agregarPerroPorAdoptar(context,perro){
+    agregarPerroPorAdoptar(context, perro) {
       context.commit('agregarPerroPorAdoptar', perro)
     }
+     //elimarPerroPorAdoptar(context, perro){
+    // context.commit("eliminarPerroPorAdoptar",perro)
+     //     }
+    // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 
   getters: {
