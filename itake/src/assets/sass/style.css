@@ -1,3 +1,8 @@
+#resultadoBusqueda {
+  display: inline-block;
+  height: 400px;
+}
+
 #bajada {
   border-top: 1rem;
   padding: 1rem;

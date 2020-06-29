@@ -18,9 +18,6 @@
 
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-            <b-nav-item>
-            <router-link to="/adopta">patita</router-link>
-          </b-nav-item>
           <b-nav-item>
             <router-link to="/registro">Registrate</router-link>
           </b-nav-item>

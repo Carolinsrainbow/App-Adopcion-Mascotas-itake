@@ -2,6 +2,8 @@
   <div id="bajada">
     <div class="ubicacion">
       <h2>Ubicación</h2>
+       <h3>Av. Tecnopolis 006</h3>
+        <h4> Sector 12</h4>
     </div>
     <div class="rrss">
       <h2>RRSS</h2>

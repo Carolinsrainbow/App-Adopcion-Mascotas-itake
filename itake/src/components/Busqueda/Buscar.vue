@@ -27,16 +27,11 @@
             class="mb-2"
             :id="perro.id"
           >
-            <b-card-text>Some quick example text to build on the card title and make up the bulk of the card's content.</b-card-text>
+            <b-card-text>Lorem ipsum dolor sit amet consectetur adipiscing elit lacinia gravida porttitor, iaculis curabitur nullam sodales duis consequat sed interdum platea scelerisque, eleifend facilisi parturient aptent class hendrerit erat conubia luctus.</b-card-text>
             <b-button @click="elegido(perro)" variant="warning">Adoptame</b-button>
           </b-card>
         </b-row>
       </b-container>
-
-      <h1>Carrito de compras</h1>
-      {{perrosPorAdoptar}}
-      <h1>Sin repetir</h1>
-      {{getPerrosPorAdoptar}}
     </div>
   </div>
 </template>

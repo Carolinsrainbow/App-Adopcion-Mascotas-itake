@@ -8,6 +8,12 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     perrosPorAdoptar: [],
+    name:'',
+    direccion: '',
+    rut: '',
+    correo: '',
+    celular: '',
+    bautizo: '',
   },
 
   mutations: {
@@ -17,7 +23,9 @@ export default new Vuex.Store({
     eliminarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.splice(perro, 1)
     },
-   
+   incAdoptante(state,perro){
+     state.infoAdoptantes.push(perro)
+   }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
 
@@ -40,6 +48,10 @@ export default new Vuex.Store({
       let adoptados = this.getPerrosPorAdoptar;
       console.log(adoptados)
     },
+    infoAdoptante(state){
+      let infoAdoptantes = [state.name,state.direccion,state.rut,state.correo,state.celular, state.bautizo];
+      return infoAdoptantes
+    }
   },
 
   modules: {}
