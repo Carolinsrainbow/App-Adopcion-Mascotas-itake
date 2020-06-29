@@ -53,6 +53,16 @@ background-image: url("https://images.unsplash.com/photo-1517879288527-682ff596b
     color: white;
 }
 
+//-- Vista del Registro --//
+.Registro{
+    background-image: url("https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 @media (max-width: 575.98px) {
     .formulario{
         padding-left: 40px;

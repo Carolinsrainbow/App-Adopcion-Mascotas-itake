@@ -59,11 +59,6 @@ export default {
     elegido(infoPerro) {
       this.agregarPerroPorAdoptar(infoPerro)
     },
-
-    makeLike(id) {
-      this.$emit("makeLike", perro.id);
-    },
-
     getBreedRandomDog(breed) {
       this.arregloPerros = [];
       axios

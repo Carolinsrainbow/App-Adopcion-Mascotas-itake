@@ -3,13 +3,7 @@
     color: white;
 }
 
-h1{
-    font-size: 40 px;
-    padding: 2%;
-}
-p{
-    padding: 5%;
-}
+
 
 #galeria {
     max-width: 800px;
@@ -20,11 +14,6 @@ p{
     padding: 3%;
 }
 
-h2 {
-    font-family: lobster two;
-    font-weight: bolder;
-    padding-top:3%;
-}
 
 img {
     width: 90%;
@@ -63,16 +52,19 @@ img {
 }
 
 @media (max-width: 575.98px) {
-  #card-body{
-      display: none;
-  }
-  #texto{
-      display: grid
-  }
-  #galeria{
-      display: none
-  }
-  p{
-      display:none
-  }
+    #card-body {
+        display: none;
+    }
+
+    #texto {
+        display: grid
+    }
+
+    #galeria {
+        display: none
+    }
+
+    p {
+        display: none
+    }
 }

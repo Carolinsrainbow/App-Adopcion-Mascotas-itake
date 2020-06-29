@@ -23,9 +23,9 @@ export default new Vuex.Store({
     eliminarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.splice(perro, 1)
     },
-   incAdoptante(state,perro){
-     state.infoAdoptantes.push(perro)
-   }
+    mutandoInfoAdoptantes(state,info){
+      state.infoAdoptantes
+    }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
 
@@ -35,7 +35,7 @@ export default new Vuex.Store({
     },
     eliminarPerroPorAdoptar(context, perro) {
       context.commit("eliminarPerroPorAdoptar", perro)
-    }
+    },
     // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 

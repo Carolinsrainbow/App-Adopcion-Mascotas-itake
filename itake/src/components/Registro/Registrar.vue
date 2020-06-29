@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-container>
+    <b-container class="Registro">
       <h1>Bienvenido a</h1>
       <h2>Para navegar por el sitio necesitas logearte</h2>
       <div id="inicio">

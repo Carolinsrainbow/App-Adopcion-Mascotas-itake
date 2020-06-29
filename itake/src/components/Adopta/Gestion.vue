@@ -2,7 +2,8 @@
   <div>
     <h2>Esta es la página para que gestiones la adopción de tu nueva mascota</h2>
     <div>
-      <b-card id="resultadoBusqueda"
+      <b-card
+        id="resultadoBusqueda"
         v-for="perro in getPerrosPorAdoptar"
         :key="perro"
         :img-src="perro"
@@ -11,10 +12,9 @@
         tag="article"
         style="max-width: 20rem;"
         class="mb-2"
-
       >
         <!-- el perro de abajo sale del v-for  -->
-  <b-form-input type="text" placeholder="Ingresa el nombre para tu mascota" v-model="bautizo"></b-form-input>
+        <b-form-input type="text" placeholder="Ingresa el nombre para tu mascota" v-model="bautizo"></b-form-input>
         <button @click="alClickearEliminar(perro)">Eliminar</button>
       </b-card>
     </div>
@@ -31,8 +31,8 @@
       <h3>Ingresa tu correo</h3>
       <b-form-input type="text" placeholder="Ingresa tu email" v-model="correo"></b-form-input>
       <h3>Ingresa tu número de celular</h3>
-      <b-button variant="warning" @click="guardar()" >¡Vamos por tu nuevo amigo!</b-button>
-          <b-form-input type="text" placeholder="Ingresa tu número de celular" v-model="celular"></b-form-input>
+      <b-form-input type="text" placeholder="Ingresa tu número de celular" v-model="celular"></b-form-input>
+      <b-button variant="warning">¡Vamos por tu nuevo amigo!</b-button>
     </div>
   </div>
 </template>
@@ -40,7 +40,7 @@
 <script>
 import firebase from "firebase";
 import axios from "axios";
-import { mapState, mapGetters, mapActions} from "vuex";
+import { mapState, mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Gestion",
@@ -51,7 +51,7 @@ export default {
       rut: "",
       correo: "",
       celular: "",
-      bautizo: "",
+      bautizo: ""
     };
   },
 
@@ -61,9 +61,6 @@ export default {
     alClickearEliminar(perro) {
       this.eliminarPerroPorAdoptar(perro);
     },
-    guardar(){
-      console.log(this.nuevaPersona)
-    }
   },
   computed: {
     ...mapGetters(["getPerrosPorAdoptar"])
