@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h2>Esta es la página para que gestiones la adopción de tu nueva mascota</h2>
-    <div>
+    <div id="info">
+          <div>
+              <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
       <b-card
         id="resultadoBusqueda"
         v-for="perro in getPerrosPorAdoptar"
@@ -18,10 +19,8 @@
         <button @click="alClickearEliminar(perro)">Eliminar</button>
       </b-card>
     </div>
-
-    <h2>Necesitamos Saber ...</h2>
-
-    <div id="info">
+        
+             <h2>Necesitamos más información ...</h2>
       <h3>Ingresa tu nombre completo</h3>
       <b-form-input type="text" placeholder="Ingresa tu nombre completo" v-model="name"></b-form-input>
       <h3>Ingresa tu dirección</h3>

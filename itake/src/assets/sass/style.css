@@ -41,10 +41,22 @@ h2 {
   padding-top: 1%;
 }
 
-p {
+.parallax p {
   padding: 5%;
   width: 600px;
   color: #0D4268;
+}
+
+.Registro h1 {
+  color: #BFA770;
+}
+
+.Registro h2 {
+  color: whitesmoke;
+}
+
+.Registro h3 {
+  color: #32A4B3;
 }
 
 #carrusel a {
@@ -206,8 +218,8 @@ img {
   color: white;
 }
 
-.Registro {
-  background-image: url("https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+#info {
+  background-image: url("https://images.pexels.com/photos/169524/pexels-photo-169524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   height: 100%;
   background-attachment: fixed;
   background-position: center;
@@ -215,10 +227,30 @@ img {
   background-size: cover;
 }
 
+#info h1 {
+  color: #F1F684;
+}
+
+#info h2 {
+  color: #32A4B3;
+}
+
+#info h3 {
+  color: #BFA770;
+}
+
 @media (max-width: 575.98px) {
   .formulario {
     padding-left: 40px;
   }
+}
+.Registro {
+  background-image: url("https://images.unsplash.com/photo-1586030307451-dfc64907aaa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

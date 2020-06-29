@@ -53,9 +53,9 @@ background-image: url("https://images.unsplash.com/photo-1517879288527-682ff596b
     color: white;
 }
 
-//-- Vista del Registro --//
-.Registro{
-    background-image: url("https://images.pexels.com/photos/416160/pexels-photo-416160.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+//-- Vista de  la página Adopta --//
+#info{
+    background-image: url("https://images.pexels.com/photos/169524/pexels-photo-169524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     height: 100%;
     background-attachment: fixed;
     background-position:center;
@@ -63,8 +63,31 @@ background-image: url("https://images.unsplash.com/photo-1517879288527-682ff596b
     background-size: cover;
 }
 
+#info h1{
+    color: #F1F684 ;
+}
+#info h2{
+    color:#32A4B3 ;
+}
+
+#info h3{
+    color: #BFA770;
+}
 @media (max-width: 575.98px) {
     .formulario{
         padding-left: 40px;
     }
 }
+
+
+//-- Vista de  la página Registro --//
+.Registro{
+    background-image: url("https://images.unsplash.com/photo-1586030307451-dfc64907aaa5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    height: 100%;
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+//-- Fin  de  la página Registro --//
+

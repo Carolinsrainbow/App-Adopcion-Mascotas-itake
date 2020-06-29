@@ -5,11 +5,11 @@
     <b-carousel id="carrusel"
       v-model="slide"
       :interval="4000"
-      controls
+      fade
       indicators
       background="#ababab"
-      img-width="100"
-      img-height="100"
+      img-width="1024"
+      img-height="480"
       style="text-shadow: 1px 1px 2px #333;"
       @sliding-start="onSlideStart"
       @sliding-end="onSlideEnd"

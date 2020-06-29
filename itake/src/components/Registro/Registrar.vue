@@ -1,7 +1,7 @@
 <template>
-  <div>
-    <b-container class="Registro">
-      <h1>Bienvenido a</h1>
+  <div class="Registro">
+    <b-container>
+      <h1>Bienvenido a iTake</h1>
       <h2>Para navegar por el sitio necesitas logearte</h2>
       <div id="inicio">
         <h3>Ingresa tu nombre</h3>
