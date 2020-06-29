@@ -14,7 +14,6 @@ Vue.use(VueSweetalert2);
 
 // Firebase
 import Firebase from "firebase";
-
 Vue.use(BootstrapVue);
 
 Vue.config.productionTip = false;
@@ -30,6 +29,7 @@ const firebaseConfig = {
 };
 
 Firebase.initializeApp(firebaseConfig)
+
 // let auth = Firebase.auth();
 // let db = Firebase.firestore();
 // db.collection('coleccionsito').doc('').onSnapshot( )

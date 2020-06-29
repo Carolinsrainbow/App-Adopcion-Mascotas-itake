@@ -19,14 +19,6 @@ export default {
     Buscar,
     Bajada
   },
-  methods: {
-    makeLike(id){
-      this.arregloPerro.forEach((p,i)=> {
-        p.id === id? this.perros[i].like = !this.perros[i].like: false
-      })
-        let perros 
-      }
-    }
   }
 
 

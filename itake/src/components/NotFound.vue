@@ -2,7 +2,7 @@
 <div>
 <Navbar></Navbar>
     <h1> Humano esta ruta no es válida</h1>
-    <img src="https://images.unsplash.com/photo-1526636355180-fe37f8ce86cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" alt="invalida">
+    <img src="https://images.pexels.com/photos/1331821/cat-eyes-angry-suspicious-1331821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="invalida">
           <Bajada />
     </div>
 </template>

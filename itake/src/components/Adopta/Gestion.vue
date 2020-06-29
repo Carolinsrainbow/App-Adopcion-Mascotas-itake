@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
+    <h2>Esta es la página para que gestiones la adopción de tu nueva mascota</h2>
     <div>
       <b-card
         v-for="perro in getPerrosPorAdoptar"
@@ -14,6 +14,7 @@
         class="mb-2"
       >
         <!-- el perro de abajo sale del v-for  -->
+  <b-form-input type="text" placeholder="Ingresa el nombre para tu mascota" v-model="bautizo"></b-form-input>
         <button @click="alClickearEliminar(perro)">Eliminar</button>
       </b-card>
     </div>
@@ -32,8 +33,7 @@
       <h3>Ingresa tu número de celular</h3>
       <b-form-input type="text" placeholder="Ingresa tu número de celular" v-model="celular"></b-form-input>
       <h3>Ingresa el nombre para tu mascota</h3>
-      <b-form-input type="text" placeholder="Ingresa el nombre para tu mascota" v-model="bautizo"></b-form-input>
-      <b-button variant="warning" @click="guardar()">¡Vamos por tu nuevo amigo!</b-button>
+      <b-button variant="warning" @click="guardar()" >¡Vamos por tu nuevo amigo!</b-button>
     </div>
   </div>
 </template>
@@ -41,7 +41,7 @@
 <script>
 import firebase from "firebase";
 import axios from "axios";
-import { mapState, mapGetters, mapActions } from "vuex";
+import { mapState, mapGetters, mapActions} from "vuex";
 
 export default {
   name: "Gestion",
@@ -53,7 +53,7 @@ export default {
       rut: "",
       correo: "",
       celular: "",
-      bautizo: ""
+      bautizo: "",
     };
   },
 
@@ -62,39 +62,8 @@ export default {
 
     alClickearEliminar(perro) {
       this.eliminarPerroPorAdoptar(perro);
-    }
+    },
   },
-  guardar() {
-    var name = document.getElementById("name").value;
-    var direccion = document.getElementById("direccion").value;
-    var rut = document.getElementById("rut").value;
-    var correo = document.getElementById("correo").value;
-    var celular = document.getElementById("celular").value;
-    var bautizo = document.getElementById("bautizo").value;
-db.collection("personas").add({
-            name: name,
-            direccion: direccion,
-            rut: rut,
-            correo: correo,
-            celular: celular,
-            bautizo: bautizo
-        })
-        .then(function (docRef) {
-            // La respuesta positiva a la promesa y se envían los datos
-            // + limpieza la casilla 
-            document.getElementById('name').value = '';
-            document.getElementById('direccion').value = '';
-            document.getElementById('rut').value = '';
-            document.getElementById('correo').value = '';
-            document.getElementById('celular').value = '';
-            document.getElementById('bautizo').value = '';
-
-        })
-        .catch(function (error) {
-            console.error("Error adding document: ", error);
-        });
-  },
-
   computed: {
     ...mapGetters(["getPerrosPorAdoptar"])
   }
