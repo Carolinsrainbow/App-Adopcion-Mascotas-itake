@@ -59,6 +59,15 @@ export default {
           }   
         );    
     },
+    // created(){
+    //   firebase.auth().onAuthStateChanged(user=>{
+    //     if(user){
+    //       this.user = user 
+    //     }else{
+    //       this.user = null
+    //     }
+    //   })
+    // }
   },
 }
 </script>

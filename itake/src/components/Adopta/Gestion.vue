@@ -30,7 +30,7 @@
       <h3>Ingresa tu dirección</h3>
       <b-form-input type="text" placeholder="Ingresa tu dirección" v-model="direccion"></b-form-input>
       <h3>Ingresa tu Rut</h3>
-      <b-form-input type="text" placeholder="Ingresa tu email" v-model="rut"></b-form-input>
+      <b-form-input type="text" placeholder="Ingresa tu rut" v-model="rut"></b-form-input>
       <h3>Ingresa tu número de celular</h3>
       <b-form-input type="text" placeholder="Ingresa tu número de celular" v-model="celular"></b-form-input>
       <b-button variant="warning">¡Vamos por tu nuevo amigo!</b-button>
