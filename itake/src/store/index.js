@@ -8,12 +8,6 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     perrosPorAdoptar: [],
-    name: '',
-    direccion: '',
-    rut: '',
-    correo: '',
-    celular: '',
-    bautizo: '',
   },
 
   mutations: {
@@ -35,7 +29,9 @@ export default new Vuex.Store({
       let id = perro.id;
       let img = perro.img
       let payload = {
-        email: 'asasa',
+        email: {
+            
+        },
         perritos: {
           perritosAdoptados: [{
             id,
@@ -63,10 +59,6 @@ export default new Vuex.Store({
       let adoptados = this.getPerrosPorAdoptar;
       console.log(adoptados)
     },
-    infoAdoptante(state) {
-      let infoAdoptantes = [state.name, state.direccion, state.rut, state.correo, state.celular, state.bautizo];
-      return infoAdoptantes
-    }
   },
 
   modules: {}

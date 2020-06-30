@@ -16,6 +16,9 @@ Vue.use(VueSweetalert2);
 // Firebase
 import Firebase from "firebase";
 
+// Persistencia del estado
+import createPersistedState from "vuex-persistedstate";
+
 
 Vue.config.productionTip = false;
 
@@ -50,5 +53,6 @@ Firebase.initializeApp(firebaseConfig)
 new Vue({
   router,
   store,
+  plugins: [createPersistedState()],
   render: h => h(App)
 }).$mount("#app");
