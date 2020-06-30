@@ -2,15 +2,6 @@
   <div class="login-fondo">
     <b-container >
       <b-row class="justify-content-center pt-5  mr-1 ">
-        <b-alert
-  :show="dismissCountDown"
-  dismissible
-  :variant="mensaje.color"
-  @dismissed="dismissCountDown=0"
-  @dismiss-count-down="countDownChanged"
->
-  {{mensaje.texto}}
-</b-alert>
         <div  class="col-md-4 formulario">
           <b-form >
             <b-form-group class="text-center pt-3">
@@ -52,9 +43,6 @@ export default {
     return {
       email: "",
       password: "",
-      mensaje: {color: 'success', texto: ''},
-      dismissSecs: 5,
-      dismissCountDown: 0
     };
   },
   methods: {
@@ -67,9 +55,7 @@ export default {
           },
           (reject) => {
 
-            this.mensaje.color= "success";
-            this.mensaje.texto= "holo";
-            this.showAlert();  
+        
           }   
         );    
     },
