@@ -1,8 +1,6 @@
 <template>
   <div>
     <Navbar></Navbar>
-    <h1>Bienvenido al Blog de la comunidad </h1>
-    <h2>Traemos toda la información que necesitas saber</h2>
     <Collage></Collage>
     <Bajada />
   </div>

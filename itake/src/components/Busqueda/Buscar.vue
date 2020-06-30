@@ -20,7 +20,7 @@
             v-for="(perro,i) in arregloPerros"
             :key="i"
             title="Aqui van perritos"
-            :img-src="perro"
+            :img-src="perro.img"
             img-top
             tag="article"
             style="max-width: 20rem;"
@@ -64,9 +64,21 @@ export default {
       axios
         .get(`https://dog.ceo/api/breed/${breed}/images/random/12`)
         .then(response => {
-          response.data.message.forEach(perro => this.arregloPerros.push(perro));
+          // response.data.message.forEach(perro => this.arregloPerros.push(perro));
+        this.formatApi(response);
         })
-        .catch(e => console.log(e));
+        // .catch(e => console.log(e));
+    },
+formatApi(response){
+      let dogs = {};
+      for (let index = 0; index < response.data.message.length; index++) {
+        dogs = {
+          "id": "id_" + index + 1,
+          "img": response.data.message[index]
+        }
+        this.arregloPerros.push(dogs)        
+      }
+      console.log(this.arregloPerros);
     }
   },
 
@@ -76,4 +88,5 @@ export default {
   }
 };
 </script>
+
 

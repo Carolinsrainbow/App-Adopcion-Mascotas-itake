@@ -41,27 +41,47 @@ h2 {
   padding-top: 1%;
 }
 
-.parallax p {
-  padding: 5%;
-  width: 600px;
-  color: #0D4268;
-}
-
 .Registro h1 {
   color: #BFA770;
 }
 
 .Registro h2 {
   color: whitesmoke;
+  text-align: center;
 }
 
 .Registro h3 {
   color: #32A4B3;
 }
 
+.parallax h2 {
+  text-align: center;
+  color: black;
+}
+
+.parallax h3 {
+  text-align: center;
+  color: #32A4B3;
+}
+
+.parallax h4 {
+  text-align: center;
+  color: #32A4B3;
+}
+
+.parallax p {
+  width: 500px;
+  color: #0D4268;
+  text-align: center;
+}
+
 #carrusel a {
   text-decoration: none;
   color: white;
+}
+
+#carrusel {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.56);
 }
 
 #galeria {
@@ -164,6 +184,14 @@ img {
   padding: 0 !important;
 }
 
+#carta-imagenes {
+  background: linear-gradient(#1E575E, #096975);
+}
+
+#carta-imagenes .card {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.56);
+}
+
 .parallax {
   background-image: url("https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
   height: 100% !important;
@@ -246,7 +274,7 @@ img {
 }
 .Registro {
   background-image: url("https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  height: 600px;
+  height: 550px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

@@ -1,26 +1,30 @@
 <template>
   <div>
     <div id="info">
-          <div>
-              <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
-      <b-card
-        id="resultadoBusqueda"
-        v-for="perro in getPerrosPorAdoptar"
-        :key="perro"
-        :img-src="perro"
-        img-alt="Image"
-        img-top
-        tag="article"
-        style="max-width: 20rem;"
-        class="mb-2"
-      >
-        <!-- el perro de abajo sale del v-for  -->
-        <b-form-input type="text" placeholder="Ingresa el nombre para tu mascota" v-model="bautizo"></b-form-input>
-        <button @click="alClickearEliminar(perro)">Eliminar</button>
-      </b-card>
-    </div>
-        
-             <h2>Necesitamos más información ...</h2>
+      <div>
+        <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
+        <b-card
+          id="resultadoBusqueda"
+          v-for="perro in getPerrosPorAdoptar"
+          :key="perro.id"
+          :img-src="perro.img"
+          img-alt="Image"
+          img-top
+          tag="article"
+          style="max-width: 20rem;"
+          class="mb-2"
+        >
+          <!-- el perro de abajo sale del v-for  -->
+          <b-form-input
+            type="text"
+            placeholder="Ingresa el nombre para tu mascota"
+            v-model="bautizo"
+          ></b-form-input>
+          <button @click="alClickearEliminar(perro)">Eliminar</button>
+        </b-card>
+      </div>
+
+      <h2>Necesitamos más información ...</h2>
       <h3>Ingresa tu nombre completo</h3>
       <b-form-input type="text" placeholder="Ingresa tu nombre completo" v-model="name"></b-form-input>
       <h3>Ingresa tu dirección</h3>
@@ -59,7 +63,7 @@ export default {
 
     alClickearEliminar(perro) {
       this.eliminarPerroPorAdoptar(perro);
-    },
+    }
   },
   computed: {
     ...mapGetters(["getPerrosPorAdoptar"])

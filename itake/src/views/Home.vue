@@ -13,7 +13,7 @@
             </div>
           </div>
         
-<div id="card-body" class="p-5">
+<div id="carta-imagenes" class="p-5">
   <b-container> 
     <b-row>
       <b-col md="3">

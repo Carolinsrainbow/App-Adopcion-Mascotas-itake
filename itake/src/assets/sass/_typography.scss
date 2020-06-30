@@ -8,17 +8,31 @@ h2 {
     font-weight: bolder;
     padding-top:1%;
 }
-.parallax p{
-    padding: 5%;
-    width: 600px;
-    color: #0D4268
-}
+
 
 .Registro h1{ color: #BFA770
 }
 .Registro h2{ 
-    color:whitesmoke
+    color:whitesmoke;
+    text-align: center;
 }
 .Registro h3{
     color: #32A4B3
+}
+.parallax h2{
+    text-align:center;
+    color: black
+}
+.parallax h3{
+    text-align: center;
+    color:  #32A4B3
+}
+.parallax h4{
+    text-align: center;
+    color:  #32A4B3
+}
+.parallax p{
+    width: 500px;
+    color: #0D4268;
+    text-align: center;
 }
