@@ -8,7 +8,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     perrosPorAdoptar: [],
-    name:'',
+    name: '',
     direccion: '',
     rut: '',
     correo: '',
@@ -23,7 +23,7 @@ export default new Vuex.Store({
     eliminarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.splice(perro, 1)
     },
-    mutandoInfoAdoptantes(state,info){
+    mutandoInfoAdoptantes(state, info) {
       state.infoAdoptantes
     }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
@@ -31,7 +31,22 @@ export default new Vuex.Store({
 
   actions: {
     agregarPerroPorAdoptar(context, perro) {
-      context.commit('agregarPerroPorAdoptar', perro)
+      console.log(perro);
+      let id = perro.id;
+      let img = perro.img
+      let payload = {
+        email: 'asasa',
+        perritos: {
+          perritosAdoptados: [{
+            id,
+            img
+          }]
+        }
+      }
+      axios.post('https://us-central1-itake-1436f.cloudfunctions.net/personas/persona', payload).then(data => {
+        console.log(data)
+        context.commit('agregarPerroPorAdoptar', perro)
+      })
     },
     eliminarPerroPorAdoptar(context, perro) {
       context.commit("eliminarPerroPorAdoptar", perro)
@@ -48,8 +63,8 @@ export default new Vuex.Store({
       let adoptados = this.getPerrosPorAdoptar;
       console.log(adoptados)
     },
-    infoAdoptante(state){
-      let infoAdoptantes = [state.name,state.direccion,state.rut,state.correo,state.celular, state.bautizo];
+    infoAdoptante(state) {
+      let infoAdoptantes = [state.name, state.direccion, state.rut, state.correo, state.celular, state.bautizo];
       return infoAdoptantes
     }
   },

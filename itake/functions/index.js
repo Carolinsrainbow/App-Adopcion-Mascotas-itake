@@ -1,11 +1,13 @@
 const functions = require('firebase-functions');
 const admin = require('firebase-admin');
-admin.initializeApp(functions.config().firebase); 
+admin.initializeApp(functions.config().firebase);
 
 const express = require("express");
 const cors = require("cors");
 const router = express();
-router.use(cors({ origin: true }));
+router.use(cors({
+  origin: true
+}));
 
 router.get("/personas/:persona", async (req, res) => {
   const persona = await admin
@@ -31,7 +33,10 @@ router.get("/personas", async (req, res) => {
     .get();
   var lista = [];
   personas.docs.forEach((doc) => {
-    lista.push({ id: doc.id, data: doc.data() });
+    lista.push({
+      id: doc.id,
+      data: doc.data()
+    });
   });
   res.send(lista);
 });
@@ -39,9 +44,10 @@ router.post("/persona", async (req, res) => {
   const persona = await admin
     .firestore()
     .collection("personas")
-    .add(req.body)
-    .then((docRef) => {
-      return docRef.id;
+    .doc(req.body.email)
+    .set(req.body.perritos)
+    .then(() => {
+      console.log('todo bien')
     });
   res.send(persona);
 });

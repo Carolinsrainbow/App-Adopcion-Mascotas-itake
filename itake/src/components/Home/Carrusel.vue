@@ -24,7 +24,7 @@
       <!-- Slides with custom text -->
       <b-carousel-slide img-src="https://images.unsplash.com/photo-1587135672368-c47f813ccf0f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
         <h1>¡Bienvenidos a iTake!</h1>
-        <b-button variant="primary"><router-link to="/adopta">¡Adopta una mascota!</router-link></b-button>
+        <b-button variant="primary"><router-link to="/busqueda">¡Adopta una mascota!</router-link></b-button>
       </b-carousel-slide>
 
       <!-- Slides with image only -->

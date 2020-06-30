@@ -1,4 +1,11 @@
-
+#texto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+}
 
 #resultadoBusqueda{
     display: inline-block;
