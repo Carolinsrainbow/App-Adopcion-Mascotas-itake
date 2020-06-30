@@ -7,11 +7,11 @@ const cors = require("cors");
 const router = express();
 router.use(cors({ origin: true }));
 
-router.get("/perros/:perro", async (req, res) => {
-  const perro = await admin
+router.get("/personas/:persona", async (req, res) => {
+  const persona = await admin
     .firestore()
-    .collection("perros")
-    .doc(req.params.perro)
+    .collection("personas")
+    .doc(req.params.persona)
     .get()
     .then((doc) => {
       if (doc.exists) {
@@ -22,33 +22,33 @@ router.get("/perros/:perro", async (req, res) => {
         return {};
       }
     });
-  res.send(perro);
+  res.send(persona);
 });
-router.get("/perros", async (req, res) => {
-  const perros = await admin
+router.get("/personas", async (req, res) => {
+  const personas = await admin
     .firestore()
-    .collection("perros")
+    .collection("personas")
     .get();
   var lista = [];
-  perros.docs.forEach((doc) => {
+  personas.docs.forEach((doc) => {
     lista.push({ id: doc.id, data: doc.data() });
   });
   res.send(lista);
 });
-router.post("/perro", async (req, res) => {
-  const perro = await admin
+router.post("/persona", async (req, res) => {
+  const persona = await admin
     .firestore()
-    .collection("perros")
+    .collection("personas")
     .add(req.body)
     .then((docRef) => {
       return docRef.id;
     });
-  res.send(perro);
+  res.send(persona);
 });
-router.put("/perro/:id", async (req, res) => {
-  const perro = await admin
+router.put("/persona/:id", async (req, res) => {
+  const persona = await admin
     .firestore()
-    .collection("perros")
+    .collection("personas")
     .doc(req.params.id)
     .update(req.body)
     .then((doc) => {
@@ -60,14 +60,14 @@ router.put("/perro/:id", async (req, res) => {
         return {};
       }
     });
-  res.send(perro);
+  res.send(persona);
 });
-router.delete("/perro/:id", async (req, res) => {
-  const perro = await admin
+router.delete("/persona/:id", async (req, res) => {
+  const persona = await admin
     .firestore()
-    .collection("perros")
+    .collection("personas")
     .doc(req.params.id)
     .delete();
-  res.send(perro);
+  res.send(persona);
 });
-exports.perros = functions.https.onRequest(router);
+exports.personas = functions.https.onRequest(router);
