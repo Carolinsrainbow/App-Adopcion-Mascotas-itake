@@ -147,6 +147,7 @@ img {
   }
 }
 #nav-collapse {
+  display: table-column-group;
   height: 60px;
 }
 

@@ -73,7 +73,7 @@ formatApi(response){
       let dogs = {};
       for (let index = 0; index < response.data.message.length; index++) {
         dogs = {
-          "id": "id_" + index + 1,
+          "id": "id_" + Math.floor(Math.random()*1000) + index + 1,
           "img": response.data.message[index]
         }
         this.arregloPerros.push(dogs)        

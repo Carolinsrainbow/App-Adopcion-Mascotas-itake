@@ -1,4 +1,5 @@
 #nav-collapse {
+    display: table-column-group;
     height: 60px;
 }
 
@@ -12,6 +13,7 @@
     text-decoration: none;
     color: white;
 }
+
 #usuario a{
     color:#32A4B3;
     font-size: 15px;
