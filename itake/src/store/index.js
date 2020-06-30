@@ -14,11 +14,12 @@ export default new Vuex.Store({
     correo: '',
     celular: '',
     bautizo: '',
+    favoritos: []
   },
 
   mutations: {
-    agregarPerroPorAdoptar(state, perro) {
-      state.perrosPorAdoptar.push(perro)
+    agregarPerroPorAdoptar(state, perritos) {
+      state.favoritos = perritos
     },
     eliminarPerroPorAdoptar(state, perro) {
       state.perrosPorAdoptar.splice(perro, 1)
@@ -30,22 +31,21 @@ export default new Vuex.Store({
   },
 
   actions: {
-    agregarPerroPorAdoptar(context, perro) {
-      console.log(perro);
+    agregarPerroPorAdoptar({commit, state}, perro) {
+      let perritos = state.favoritos;
+      perritos.push(perro)
       let id = perro.id;
       let img = perro.img
+
       let payload = {
-        email: 'asasa',
+        email: firebase.auth().currentUser.email,
         perritos: {
-          perritosAdoptados: [{
-            id,
-            img
-          }]
+          perritosFavoritos: perritos
         }
       }
       axios.post('https://us-central1-itake-1436f.cloudfunctions.net/personas/persona', payload).then(data => {
         console.log(data)
-        context.commit('agregarPerroPorAdoptar', perro)
+        commit('agregarPerroPorAdoptar', perritos)
       })
     },
     eliminarPerroPorAdoptar(context, perro) {
