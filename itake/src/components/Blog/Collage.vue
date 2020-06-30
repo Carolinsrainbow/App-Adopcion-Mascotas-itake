@@ -15,7 +15,7 @@
         <b-card-text>Lorem ipsum dolor sit amet consectetur adipiscing elit, varius rutrum urna hac torquent pharetra quisque ullamcorper, justo eros ultrices vehicula vulputate mollis. Ac pharetra senectus dapibus taciti cursus proin curabitur luctus, egestas dictum vivamus varius torquent tristique vehicula, lacinia nostra aptent erat massa nisl nulla. Suscipit sollicitudin pellentesque luctus vulputate fringilla sociis facilisis, ultrices urna venenatis tristique tortor a, nisi ultricies integer platea pharetra dictumst.</b-card-text>
       </b-card>
     </b-container>
-    <h2>Sus fotos</h2>
+    <h1>Sus fotos</h1>
 
     <div id="galeria">
       <div class="seccion1">
