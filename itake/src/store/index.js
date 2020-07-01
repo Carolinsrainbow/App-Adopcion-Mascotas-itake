@@ -36,20 +36,24 @@ export default new Vuex.Store({
       state
     }, perro) {
       let perritos = state.favoritos;
-      perritos.push(perro)
       let id = perro.id;
       let img = perro.img
+      if(!perritos.find( p => p.id == id) ){
 
-      let payload = {
-        email: firebase.auth().currentUser.email,
-        perritos: {
-          perritosFavoritos: perritos
+        perritos.push(perro)
+        let payload = {
+          email: firebase.auth().currentUser.email,
+          perritos: {
+            perritosFavoritos: perritos
+          }
         }
+        axios.post('https://us-central1-itake-1436f.cloudfunctions.net/personas/persona', payload).then(data => {
+          console.log(data)
+          commit('agregarPerroPorAdoptar', perritos)
+        })
+      }else{
+        alert('Ya estqa este perrito')
       }
-      axios.post('https://us-central1-itake-1436f.cloudfunctions.net/personas/persona', payload).then(data => {
-        console.log(data)
-        commit('agregarPerroPorAdoptar', perritos)
-      })
     },
     eliminarPerroPorAdoptar({
       commit,

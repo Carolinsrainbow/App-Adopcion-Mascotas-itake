@@ -1,6 +1,7 @@
 <template>
   <div class="Registro">
     <b-container>
+      
       <h1>Bienvenido a iTake</h1>
       <h2>Para navegar por el sitio necesitas logearte</h2>
       <div id="inicio">
@@ -22,7 +23,9 @@
           placeholder="Please input password"
           v-model="password"
         ></b-form-input>
-        <b-button variant="warning" @click="registrar">Ingresar</b-button>
+        <b-form-group class="pb-5">
+        <b-button class="mx-sm-4  ingresar" variant="warning" @click="registrar">Ingresar</b-button>
+ </b-form-group>
       </div>
     </b-container>
   </div>

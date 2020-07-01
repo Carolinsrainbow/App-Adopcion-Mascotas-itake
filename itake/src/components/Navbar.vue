@@ -24,7 +24,7 @@
           </b-nav-item>
           <b-nav-item-dropdown right>
             <!-- Using 'button-content' slot -->
-            <template   v-slot:button-content>
+            <template v-slot:button-content>
               <em v-if="existe">Usuario</em>
               <em v-else>Ingresa</em>
             </template>
@@ -71,7 +71,7 @@ existe: null
       if(existe){
         this.existe = existe
       }else{
-        this.user = null
+        this.existe = null
       }
     })
   }
