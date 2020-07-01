@@ -18,11 +18,12 @@ export default new Vuex.Store({
   },
 
   mutations: {
+    
     agregarPerroPorAdoptar(state, perritos) {
       state.favoritos = perritos
     },
-    eliminarPerroPorAdoptar(state, perro) {
-      state.perrosPorAdoptar.splice(perro, 1)
+    eliminarPerroPorAdoptar(state, newFavoritos) {
+      state.favoritos = newFavoritos
     },
     mutandoInfoAdoptantes(state, info) {
       state.infoAdoptantes
@@ -48,15 +49,28 @@ export default new Vuex.Store({
         commit('agregarPerroPorAdoptar', perritos)
       })
     },
-    eliminarPerroPorAdoptar(context, perro) {
-      context.commit("eliminarPerroPorAdoptar", perro)
+    eliminarPerroPorAdoptar({commit , state}, perro) {
+      let favoritos = state.favoritos;
+      let newFavoritos  =  favoritos.filter( f => f.id !== perro.id)
+
+      console.log(newFavoritos);
+      let payload = {
+        email: firebase.auth().currentUser.email,
+        perritos: {
+          perritosFavoritos: newFavoritos
+        }
+      }
+      axios.post('https://us-central1-itake-1436f.cloudfunctions.net/personas/persona', payload).then(data => {
+        console.log(data)
+        commit("eliminarPerroPorAdoptar", newFavoritos)
+      })
     },
     // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 
   getters: {
     getPerrosPorAdoptar(state) {
-      let listaSinPerrosRepetidos = new Set(state.perrosPorAdoptar)
+      let listaSinPerrosRepetidos = new Set(state.favoritos)
       return [...listaSinPerrosRepetidos]
     },
     perrosAdoptados() {

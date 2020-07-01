@@ -5,8 +5,8 @@
         <h1>Esta es la página para que gestiones la adopción de tu nueva mascota</h1>
         <b-card
           id="resultadoBusqueda"
-          v-for="perro in getPerrosPorAdoptar"
-          :key="perro.id"
+          v-for="(perro,i) in getPerrosPorAdoptar"
+          :key="i"
           :img-src="perro.img"
           img-alt="Image"
           img-top
@@ -35,16 +35,6 @@ import { mapState, mapGetters, mapActions } from "vuex";
 
 export default {
   name: "Gestion",
-  data() {
-    return {
-      name: "",
-      direccion: "",
-      rut: "",
-      celular: "",
-      bautizo:"",
-    };
-  },
-
   methods: {
     ...mapActions(["eliminarPerroPorAdoptar"]),
 
