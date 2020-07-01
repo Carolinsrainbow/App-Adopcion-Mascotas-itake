@@ -200,7 +200,7 @@ img {
 
 .parallax {
   background-image: url("https://images.unsplash.com/photo-1515002246390-7bf7e8f87b54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  height: 100% !important;
+  height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -209,7 +209,7 @@ img {
 
 .login-fondo {
   background-image: url("https://images.unsplash.com/photo-1517879288527-682ff596b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  height: 100%;
+  height: 70.6vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -222,6 +222,15 @@ img {
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.56);
   color: white;
+}
+
+.Registro {
+  background-image: url("https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+  height: 70.6vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .form-control {
@@ -245,7 +254,6 @@ img {
 }
 
 .ingresar {
-  width: 295.6px;
   padding: 10px;
   font-size: 16px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) !important;
@@ -258,7 +266,7 @@ img {
 
 #info {
   background-image: url("https://images.pexels.com/photos/169524/pexels-photo-169524.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  height: 100%;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -282,9 +290,9 @@ img {
     padding-left: 40px;
   }
 }
-.Registro {
-  background-image: url("https://images.unsplash.com/photo-1478098711619-5ab0b478d6e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
-  height: 550px;
+.NoEncontrado {
+  background-image: url("https://images.pexels.com/photos/1331821/cat-eyes-angry-suspicious-1331821.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;

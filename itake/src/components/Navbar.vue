@@ -1,6 +1,7 @@
 <template>
   <div id="Navbar">
-    <b-navbar toggleable="lg" type="dark" variant="info">
+    <b-navbar toggleable="lg" type="dark" variant="info" >
+
       <router-link to="/">Home</router-link>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
@@ -57,7 +58,7 @@ existe: null
       Firebase.auth()
         .signOut()
         .then(resolve => {
-          this.$router.push("/");
+          this.$router.push("/login");
           alert("Cerraste la sesión");
         })
         .catch(reject => {

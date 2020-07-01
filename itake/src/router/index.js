@@ -15,7 +15,10 @@ Vue.use(VueRouter);
 const routes = [{
     path: "/",
     name: "Home",
-    component: Home
+    component: Home,
+    meta: {
+      login: true
+    }
   },
   {
     path: "/login",
@@ -34,6 +37,9 @@ const routes = [{
     path: "/busqueda",
     name: "Busqueda",
     component: Busqueda,
+    meta: {
+      login: true
+    }
   },
   {
     path: "/adopta",

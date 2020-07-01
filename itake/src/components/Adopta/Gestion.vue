@@ -11,11 +11,12 @@
           img-alt="Image"
           img-top
           tag="article"
-          style="max-width: 20rem;"
+         :style="{backgroundImage: 'url('+perro.img+')', backgroundSize: 'cover', height: '300px'}"
           class="mb-2"
         >
           <!-- el perro de abajo sale del v-for  -->
-          <button @click="alClickearEliminar(perro)">Eliminar</button>
+          <b-button @click="alClickearEliminar(perro)" variant="warning">Eliminar</b-button>
+          <!-- <button @click="alClickearEliminar(perro)">Eliminar</button> -->
         </b-card>
       </div>
 

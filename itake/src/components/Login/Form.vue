@@ -36,7 +36,6 @@
 
 <script>
 import Firebase from "firebase";
-import VueSweetalert2 from 'vue-sweetalert2';
 
 export default {
   data() {
@@ -52,10 +51,9 @@ export default {
         .then(
           (accept) => {
             this.$router.push({ name: "Home" });
+              alert("Iniciaste Sesión ");
           },
           (reject) => {
-
-        
           }   
         );    
     },
