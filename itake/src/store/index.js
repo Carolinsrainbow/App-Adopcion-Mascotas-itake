@@ -14,7 +14,7 @@ export default new Vuex.Store({
   },
 
   mutations: {
-    
+
     agregarPerroPorAdoptar(state, perritos) {
       state.favoritos = perritos
     },
@@ -24,14 +24,17 @@ export default new Vuex.Store({
     mutandoInfoAdoptantes(state, info) {
       state.infoAdoptantes
     },
-    mutandoFavoritos(state, datosFavoritos){
+    mutandoFavoritos(state, datosFavoritos) {
       state.favoritos = datosFavoritos
     }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
 
   actions: {
-    agregarPerroPorAdoptar({commit, state}, perro) {
+    agregarPerroPorAdoptar({
+      commit,
+      state
+    }, perro) {
       let perritos = state.favoritos;
       perritos.push(perro)
       let id = perro.id;
@@ -48,9 +51,12 @@ export default new Vuex.Store({
         commit('agregarPerroPorAdoptar', perritos)
       })
     },
-    eliminarPerroPorAdoptar({commit , state}, perro) {
+    eliminarPerroPorAdoptar({
+      commit,
+      state
+    }, perro) {
       let favoritos = state.favoritos;
-      let newFavoritos  =  favoritos.filter( f => f.id !== perro.id)
+      let newFavoritos = favoritos.filter(f => f.id !== perro.id)
 
       console.log(newFavoritos);
       let payload = {
@@ -64,9 +70,11 @@ export default new Vuex.Store({
         commit("eliminarPerroPorAdoptar", newFavoritos)
       })
     },
-    actionFavoritos({commit}, datosFavoritos){
-    commit("mutandoFavoritos", datosFavoritos)
-  }
+    actionFavoritos({
+      commit
+    }, datosFavoritos) {
+      commit("mutandoFavoritos", datosFavoritos)
+    }
     // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 
@@ -81,5 +89,9 @@ export default new Vuex.Store({
     }
   },
 
-  modules: {}
+  modules: {
+
+  },
+  plugins: [createPersistedState()],
+
 });

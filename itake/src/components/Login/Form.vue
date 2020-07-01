@@ -18,14 +18,14 @@
 
             <b-form-group class="mx-sm-4 ligth">
               <b-form-input
-                type="text"
+                type="password"
                 placeholder="Please input password"
                 v-model="password"
               ></b-form-input>
             </b-form-group>
 
             <b-form-group class="pb-5">
-              <b-button  class="mx-sm-4  ingresar" variant="warning" @click="login">Ingresar</b-button>
+              <b-button  class="mx-sm-4  ingresar"  variant="warning" @click="login">Ingresar</b-button>
             </b-form-group>
           </b-form>
         </div>

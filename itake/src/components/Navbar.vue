@@ -57,7 +57,7 @@ existe: null
       Firebase.auth()
         .signOut()
         .then(resolve => {
-          this.$router.push("/Login");
+          this.$router.push("/");
           alert("Cerraste la sesión");
         })
         .catch(reject => {

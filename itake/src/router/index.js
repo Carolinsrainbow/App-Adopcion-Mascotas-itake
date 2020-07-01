@@ -26,6 +26,9 @@ const routes = [{
     path: "/blog",
     name: "Blog",
     component: Blog,
+    meta: {
+      login: true
+    }
   },
   {
     path: "/busqueda",
@@ -36,6 +39,9 @@ const routes = [{
     path: "/adopta",
     name: "Adopta",
     component: Adopta,
+    meta: {
+      login: true
+    }
   },
   {
     path: "/registro",
@@ -53,5 +59,18 @@ const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
   routes
+});
+
+router.beforeEach((to, from, next) => {
+  let user = Firebase.auth().currentUser;
+  console.log("Usuario => " + user);
+  let authRequired = to.matched.some(route => route.meta.login);
+  if (!user && authRequired) {
+    next("login");
+  } else if (user && !authRequired) {
+     next("Home");
+  } else {
+    next();
+  }
 });
 export default router;

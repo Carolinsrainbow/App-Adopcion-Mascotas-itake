@@ -26,28 +26,31 @@ background-image: url("https://images.unsplash.com/photo-1517879288527-682ff596b
 }
 
 .form-control{
-    background: rgb(0, 0, 0,.1)!important;
+    text-align: center;
+    background: rgb(0, 0, 0,.2)!important;
     border-style: none  !important;
-    transition: 0.5s ease-in ;
+    transition: 0.5s ease-in !important ;
     box-shadow: none !important;
+    color:white !important;
 }
 
 .form-control::placeholder{
-    background: rgb(0, 0, 0,.1)!important;
+    background: rgb(0, 0, 0,.0)!important;
     color: white!important;
     }
 
 .form-control:focus{
      background: none !important;
      outline: none !important;
-     box-shadow: none;
+     box-shadow: none !important;
         }
 
 .ingresar{
+    width: 295.6px;
     padding: 10px;
     font-size: 16px;
-    box-shadow: 0 0 30px rgb(0, 0, 0,.56);
-    transition: 0.5s ease-in ;
+    box-shadow: 0 0 30px rgb(0, 0, 0,.5)!important;
+    transition: 0.5s ease-in !important ;
 }
 
 .ingresar:hover{
