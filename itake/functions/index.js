@@ -9,23 +9,23 @@ router.use(cors({
   origin: true
 }));
 
-router.get("/personas/:persona", async (req, res) => {
-  const persona = await admin
-    .firestore()
-    .collection("personas")
-    .doc(req.params.persona)
-    .get()
-    .then((doc) => {
-      if (doc.exists) {
-        console.log("Document data:", doc.data());
-        return doc.data();
-      } else {
-        console.log("No such document!");
-        return {};
-      }
-    });
-  res.send(persona);
-});
+// router.get("/personas/:persona", async (req, res) => {
+//   const persona = await admin
+//     .firestore()
+//     .collection("personas")
+//     .doc(req.params.persona)
+//     .get()
+//     .then((doc) => {
+//       if (doc.exists) {
+//         console.log("Document data:", doc.data());
+//         return doc.data();
+//       } else {
+//         console.log("No such document!");
+//         return {};
+//       }
+//     });
+//   res.send(persona);
+// });
 router.get("/personas", async (req, res) => {
   const personas = await admin
     .firestore()

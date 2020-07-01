@@ -48,8 +48,6 @@
               <p
                 class="card-text"
               >Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <label for>Nombre del perrito:</label>
-              <input type="text" />
               <button @click="elegido(perro)" class="btn btn-warning">Adoptame</button>
             </div>
           </div>

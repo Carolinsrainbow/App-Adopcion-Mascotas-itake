@@ -2,18 +2,14 @@ import Vue from "vue";
 import Vuex from "vuex";
 import axios from "axios";
 import firebase from 'firebase';
+// Persistencia del estado
+import createPersistedState from "vuex-persistedstate";
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
     perrosPorAdoptar: [],
-    name: '',
-    direccion: '',
-    rut: '',
-    correo: '',
-    celular: '',
-    bautizo: '',
     favoritos: []
   },
 
@@ -27,6 +23,9 @@ export default new Vuex.Store({
     },
     mutandoInfoAdoptantes(state, info) {
       state.infoAdoptantes
+    },
+    mutandoFavoritos(state, datosFavoritos){
+      state.favoritos = datosFavoritos
     }
     // crear mutacionEliminarPerro(state,perro) -> Filtra la lista perrosPorAdoptar
   },
@@ -65,6 +64,9 @@ export default new Vuex.Store({
         commit("eliminarPerroPorAdoptar", newFavoritos)
       })
     },
+    actionFavoritos({commit}, datosFavoritos){
+    commit("mutandoFavoritos", datosFavoritos)
+  }
     // crear eliminarPerroPorAdoptar(context, perro) -> llama mutacion 
   },
 
@@ -76,10 +78,6 @@ export default new Vuex.Store({
     perrosAdoptados() {
       let adoptados = this.getPerrosPorAdoptar;
       console.log(adoptados)
-    },
-    infoAdoptante(state) {
-      let infoAdoptantes = [state.name, state.direccion, state.rut, state.correo, state.celular, state.bautizo];
-      return infoAdoptantes
     }
   },
 

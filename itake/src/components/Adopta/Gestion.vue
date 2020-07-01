@@ -15,11 +15,6 @@
           class="mb-2"
         >
           <!-- el perro de abajo sale del v-for  -->
-          <b-form-input
-            type="text"
-            placeholder="Ingresa el nombre para tu mascota"
-            v-model="bautizo"
-          ></b-form-input>
           <button @click="alClickearEliminar(perro)">Eliminar</button>
         </b-card>
       </div>
@@ -44,6 +39,15 @@ export default {
   },
   computed: {
     ...mapGetters(["getPerrosPorAdoptar"])
+  },
+  mounted(){
+    let email = firebase.auth().currentUser.email
+axios.get('https://us-central1-itake-1436f.cloudfunctions.net/personas/personas/' + email).then(data =>{
+
+let datosFavoritos = data.data.perritosFavoritos
+this.$store.dispatch("actionFavoritos", datosFavoritos)
+})
   }
 };
+
 </script>

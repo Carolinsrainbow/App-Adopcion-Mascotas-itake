@@ -1,3 +1,13 @@
+#texto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 3%;
+  font-size: 20px;
+  text-align: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 #resultadoBusqueda {
   display: inline-block;
   height: 400px;
@@ -73,6 +83,10 @@ h2 {
   width: 500px;
   color: #0D4268;
   text-align: center;
+}
+
+.home h2 {
+  padding: 2%;
 }
 
 #carrusel a {
@@ -167,15 +181,6 @@ img {
   font-size: 15px;
 }
 
-#texto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  font-size: 20px;
-  text-align: center;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-
 #bajada a {
   text-decoration: none;
   color: white;
@@ -220,20 +225,21 @@ img {
 }
 
 .form-control {
-  background: rgba(0, 0, 0, 0.16) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
   border-style: none !important;
   transition: 0.5s ease-in;
   box-shadow: none !important;
 }
 
 .form-control::placeholder {
-  background: rgba(0, 0, 0, 0.16) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
   color: white !important;
 }
 
 .form-control:focus {
   background: none !important;
   outline: none !important;
+  box-shadow: none;
 }
 
 .ingresar {
@@ -244,7 +250,7 @@ img {
 }
 
 .ingresar:hover {
-  color: white;
+  color: white !important;
 }
 
 #info {
