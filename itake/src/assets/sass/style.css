@@ -89,6 +89,10 @@ h2 {
   padding: 2%;
 }
 
+#bajada a {
+  padding: 1%;
+}
+
 #carrusel a {
   text-decoration: none;
   color: white;

@@ -52,7 +52,7 @@ export default new Vuex.Store({
           commit('agregarPerroPorAdoptar', perritos)
         })
       }else{
-        alert('Ya estqa este perrito')
+        alert('Ya esta seleccionado')
       }
     },
     eliminarPerroPorAdoptar({
